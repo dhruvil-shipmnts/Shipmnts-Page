@@ -1,0 +1,29 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    padding-top: 4rem;
+    height: 90vh;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    margin: 5rem;
+    text-align: center;
+  }
+  
+  .page-image {
+    max-width: 80%;
+    height: 75%;
+    margin-bottom: 3rem;
+  }
+  
+  .page-text {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
