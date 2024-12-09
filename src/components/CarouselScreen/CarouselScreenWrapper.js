@@ -1,5 +1,5 @@
 import React from "react";
-import "../CarouselScreen/CarouselScreenWrapper.css"
+import "../CarouselScreen/CarouselScreenWrapper.css";
 export default function ({
   backgroundColor,
   titleColor,
