@@ -18,11 +18,11 @@ export default function ScreenShotScreen({
       }}
     >
       <div className="title-container-screenshot">
-      {upperImage && <img className="title-image" src={upperImage}></img>}
+      {upperImage && <img className="title-image" src={upperImage} alt="Upper Image"></img>}
       <h6 className="page-title" style={{ color: titleColor || "#000000" }}>
         {title}
       </h6>
-      {lowerImage && <img className="title-image" src={lowerImage}></img>}
+      {lowerImage && <img className="title-image" src={lowerImage} alt="Lower Image"></img>}
       </div>
       <div className="highlight-center-f">
 
