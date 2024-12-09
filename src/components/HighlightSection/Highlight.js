@@ -56,22 +56,22 @@ const Highlight = () => {
     },
   ];
   return (
-    <div className="highlight-container">
+    <div id="products" className="highlight-container">
       {/* Title Section */}
       <div className="highlight-center">
         <div className="title-container">
           <h1 className="title-highlight">Welcome to Our Platform</h1>
         </div>
 
-          <CarouselWrapper >
-            <CarouselScreenWrapper {...content[0]} />
-            <CarouselScreenWrapper {...content[1]} />
-            <CarouselScreenWrapper {...content[2]} />
-            <CarouselScreenWrapper {...content[3]} />
-            <CarouselScreenWrapper {...content[4]} />
-            <CarouselScreenWrapper {...content[5]} />
-            <CarouselScreenWrapper {...content[6]} />
-          </CarouselWrapper>
+        <CarouselWrapper>
+          <CarouselScreenWrapper {...content[0]} />
+          <CarouselScreenWrapper {...content[1]} />
+          <CarouselScreenWrapper {...content[2]} />
+          <CarouselScreenWrapper {...content[3]} />
+          <CarouselScreenWrapper {...content[4]} />
+          <CarouselScreenWrapper {...content[5]} />
+          <CarouselScreenWrapper {...content[6]} />
+        </CarouselWrapper>
       </div>
     </div>
   );

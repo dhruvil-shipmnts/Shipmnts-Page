@@ -1,9 +1,8 @@
 import React from "react";
-
 import "../Button/CustomButton.css";
-export default function CustomButton({ style, children }) {
+export default function CustomButton({ style, children,link }) {
   const handleClick = () => {
-    console.log("Do Something");
+    window.location.href = link;
   };
   return (
     <button className="custom-button" style={style} onClick={handleClick}>

@@ -25,12 +25,12 @@ export default function PricingComponent() {
     },
   ];
   return (
-    <div className="pricing-page">
+    <div id="pricing" className="pricing-page">
       <div className="pricing-page-demo">
         <h2 className="pricing-title">
           Your front and back offices in one logistics software.
         </h2>
-        <CustomButton style={{ background: "#7874FC", color: "#ffffff" }}>
+        <CustomButton link="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii" style={{ background: "#7874FC", color: "#ffffff" }}>
           Demo
           <img src={Play} alt="" />
         </CustomButton>

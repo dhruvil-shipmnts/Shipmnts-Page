@@ -20,6 +20,11 @@ import SceenShot1 from "../src/components/ScreenShotScreen/image/screenshot1.png
 import Box from "../src/components/ScreenShotScreen/image/box.png";
 import Scroll from "../src/components/ScreenShotScreen/image/scroll.png";
 import Eye from "../src/components/ScreenShotScreen/image/eye.png";
+import TabScreen from "./components/TabScreen/TabScreen";
+import TabContainer from "./components/TabScreen/TabContainer";
+import WhiteTeam from "../src/components/TabScreen/team.png"
+import WhiteCircles from "../src/components/TabScreen/whiteCircles.png"
+import AboutSection from "./components/AboutSection/AboutSection";
 function App() {
   const content = [
     {
@@ -69,37 +74,51 @@ function App() {
   const screenShotContent = [
     {
       upperImage: Box,
-      title:
-        "Instant Experiences for your Customers",
+      title: "Instant Experiences for your Customers",
       backgroundColor: "#FFF2E2",
       titleColor: "#7A1600",
       images: [
-        { imgSrc: SceenShot1, title: "Self service shipment management / live DSR and Document collaboration" },
+        {
+          imgSrc: SceenShot1,
+          title:
+            "Self service shipment management / live DSR and Document collaboration",
+        },
         { imgSrc: SceenShot1, title: "No login Public link" },
-        { imgSrc: SceenShot1, title: "Pay invoices / faster payments/collection" },
+        {
+          imgSrc: SceenShot1,
+          title: "Pay invoices / faster payments/collection",
+        },
         { imgSrc: SceenShot1, title: "Rich insights" },
       ],
     },
     {
       upperImage: Scroll,
       lowerImage: Eye,
-      title:
-        "Controls & insights your  management will love",
+      title: "Controls & insights your  management will love",
       backgroundColor: "#FAE8FF",
       titleColor: "#60007B",
       images: [
         { imgSrc: SceenShot, title: "Get Ai Generated reports" },
-        { imgSrc: SceenShot, title: "Make faster decisions with instant insights around customers, trade lanes, revenue, volume & margins" },
-        { imgSrc: SceenShot, title: "Monitor shipment progress, track & resolve exceptions faster" },
+        {
+          imgSrc: SceenShot,
+          title:
+            "Make faster decisions with instant insights around customers, trade lanes, revenue, volume & margins",
+        },
+        {
+          imgSrc: SceenShot,
+          title: "Monitor shipment progress, track & resolve exceptions faster",
+        },
         { imgSrc: SceenShot, title: "Track collections and outstanding" },
-        { imgSrc: SceenShot, title: "Auto hold business with low margin or credit heavy customers" },
+        {
+          imgSrc: SceenShot,
+          title: "Auto hold business with low margin or credit heavy customers",
+        },
       ],
     },
     {
       upperImage: Mobile,
       lowerImage: Circles,
-      title:
-        "Productivity & multi party collaboration",
+      title: "Productivity & multi party collaboration",
       backgroundColor: "#FFF2E2",
       titleColor: "#7A1600",
       images: [
@@ -110,12 +129,56 @@ function App() {
       ],
     },
   ];
+  const items = [
+    {
+      key: "1",
+      label: "Sales & Pricing",
+      children: (
+        <TabContainer
+          items={[
+            "Lead & Activity management",
+            "Configurable Pipelines",
+            "Inquiry & Quotations",
+            "Task Management",
+            "Rate Explorer",
+            "Lead Analytics & more",
+          ]}
+        />
+      ),
+    },
+    {
+      key: "2",
+      label: "CS & Operations",
+      children: "Content of Tab Pane 2",
+    },
+    {
+      key: "3",
+      label: "Documentation",
+      children: "Content of Tab Pane 3",
+    },
+    {
+      key: "4",
+      label: "Accounts Receivable",
+      children: "Content of Tab Pane 5",
+    },
+    {
+      key: "5",
+      label: "Accounts Payable",
+      children: "Content of Tab Pane 6",
+    },
+    {
+      key: "6",
+      label: "Finance Controls & Taxation",
+      children: "Content of Tab Pane 7",
+    },
+  ];
   return (
     <>
       <Header />
       <LandingPage />
-      <Highlight />
+      <Highlight/>
       <ScreenShotScreen {...screenShotContent[0]} />
+      <TabScreen upperImage={WhiteTeam} lowerImage={WhiteCircles} title="AI-Driven Apps for More Efficient Teams" items={items} />
       <ScreenShotScreen {...screenShotContent[1]} />
       <ScreenShotScreen {...screenShotContent[2]} />
       <ColorScreens {...content[4]}>
@@ -136,7 +199,8 @@ function App() {
         laboriosam! Corporis repellat illum vero blanditiis quam itaque vel
         minus eum!
       </ColorScreens>
-      <PricingComponent />
+      <PricingComponent id="pricing"/>
+      <AboutSection id="about"/>
     </>
   );
 }

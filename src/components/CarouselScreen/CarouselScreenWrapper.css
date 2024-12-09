@@ -10,8 +10,9 @@
   .page-title {
     height: 10%;
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
+    font-weight: 500;
   }
   
   .page-image {

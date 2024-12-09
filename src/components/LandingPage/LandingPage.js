@@ -12,7 +12,7 @@ const LandingPage = () => {
           Streamline your day-to-day operations, boost shipment profits, and delight your customers.
         </p>
         <div className="cta">
-        <CustomButton style={{color: '#ffffff', background: '#ff6f61'}}>Demo 
+        <CustomButton link="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii" style={{color: '#ffffff', background: '#ff6f61'}}>Demo 
           <img src={Play} alt="" />
         </CustomButton>
         </div>
