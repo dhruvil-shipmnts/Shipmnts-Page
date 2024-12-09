@@ -1,0 +1,42 @@
+.pricing-page {
+  height: 120vh;
+  background: linear-gradient(175deg, #ff7152 18.06%, #f8f7f2 85.46%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  padding: 5rem;
+  flex-direction: column;
+}
+
+.pricing-page-demo {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.pricing-card-container{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+
+.pricing-card-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+}
+
+.pricing-title {
+    height: 8%;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }

@@ -1,6 +1,8 @@
 import React from 'react';
 import './LandingPage.css'; 
 import LandingImage from '../LandingPage/landingImage.png'
+import CustomButton from '../Button/CustomButton';
+import Play from '../Button/play.png' 
 const LandingPage = () => {
   return (
     <div className="main-content">
@@ -10,8 +12,9 @@ const LandingPage = () => {
           Streamline your day-to-day operations, boost shipment profits, and delight your customers.
         </p>
         <div className="cta">
-          <input type="email" placeholder="Enter your email" className="email-input" />
-          <button className="cta-button">Demo</button>
+        <CustomButton style={{color: '#ffffff', background: '#ff6f61'}}>Demo 
+          <img src={Play} alt="" />
+        </CustomButton>
         </div>
       </div>
 

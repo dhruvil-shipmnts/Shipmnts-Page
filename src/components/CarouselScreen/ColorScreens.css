@@ -1,0 +1,25 @@
+.colorpage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3.5rem;
+  height: 80vh;
+}
+
+.colorpage-title {
+  height: 8%;
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.colorpage-image {
+  max-width: 80%;
+  height: 60%;
+  margin-bottom: 2rem;
+}
+
+.colorpage-text{
+  font-size: 1rem;
+}

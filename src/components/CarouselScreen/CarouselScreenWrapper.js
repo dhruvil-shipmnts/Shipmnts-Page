@@ -5,7 +5,6 @@ export default function CarouselScreenWrapper({
   titleColor,
   title,
   imageSrc,
-  children,
 }) {
   return (
     <div
@@ -18,7 +17,6 @@ export default function CarouselScreenWrapper({
         {title}
       </h6>
       <img className="page-image" src={imageSrc} alt={title} />
-      {children}
     </div>
   );
 }

@@ -63,17 +63,15 @@ const Highlight = () => {
           <h1 className="title-highlight">Welcome to Our Platform</h1>
         </div>
 
-        {/* Carousel Placeholder */}
-        <div className="carousel-container">
-          {/* Replace this div with your carousel component */}
-          <CarouselWrapper style={{height: '100%', width: '100%'}}>
+          <CarouselWrapper >
             <CarouselScreenWrapper {...content[0]} />
             <CarouselScreenWrapper {...content[1]} />
             <CarouselScreenWrapper {...content[2]} />
             <CarouselScreenWrapper {...content[3]} />
             <CarouselScreenWrapper {...content[4]} />
+            <CarouselScreenWrapper {...content[5]} />
+            <CarouselScreenWrapper {...content[6]} />
           </CarouselWrapper>
-        </div>
       </div>
     </div>
   );

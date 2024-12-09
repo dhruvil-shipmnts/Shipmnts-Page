@@ -1,9 +1,9 @@
-import './App.css';
-import Header from './components/Header/Header';
-import React from 'react';
-import LandingPage from './components/LandingPage/LandingPage';
-import Highlight from './components/HighlightSection/Highlight';
-import CarouselScreenWrapper from './components/CarouselScreen/CarouselScreenWrapper';
+import "./App.css";
+import Header from "./components/Header/Header";
+import React from "react";
+import LandingPage from "./components/LandingPage/LandingPage";
+import Highlight from "./components/HighlightSection/Highlight";
+import ColorScreens from "./components/CarouselScreen/ColorScreens";
 import Balance from "../src/components/CarouselScreen/balance.png";
 import Colobrate from "../src/components/CarouselScreen/colobrate.png";
 import Genai from "../src/components/CarouselScreen/genai.png";
@@ -11,8 +11,8 @@ import Suppot from "../src/components/CarouselScreen/support.png";
 import Team from "../src/components/CarouselScreen/team.png";
 import Web from "../src/components/CarouselScreen/web.png";
 import Security from "../src/components/CarouselScreen/security.png";
+import PricingComponent from "./components/PricingPage/PricingComponent";
 function App() {
-
   const content = [
     {
       title:
@@ -60,12 +60,28 @@ function App() {
   ];
   return (
     <>
-    <Header />
-    <LandingPage />
-    <Highlight />
-    <CarouselScreenWrapper {...content[4]}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque necessitatibus dignissimos quas illum magnam consectetur cupiditate, porro facilis quaerat atque praesentium obcaecati ut commodi recusandae incidunt a dolorum explicabo saepe!</CarouselScreenWrapper>
-    <CarouselScreenWrapper {...content[5]}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque necessitatibus dignissimos quas illum magnam consectetur cupiditate, porro facilis quaerat atque praesentium obcaecati ut commodi recusandae incidunt a dolorum explicabo saepe!</CarouselScreenWrapper>
-    <CarouselScreenWrapper {...content[6]}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque necessitatibus dignissimos quas illum magnam consectetur cupiditate, porro facilis quaerat atque praesentium obcaecati ut commodi recusandae incidunt a dolorum explicabo saepe!</CarouselScreenWrapper>
+      <Header />
+      <LandingPage />
+      <Highlight />
+      <ColorScreens {...content[4]}>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+        laborum esse suscipit temporibus fugit numquam illo placeat eum eaque
+        architecto excepturi dolor sint rem, ipsum error aspernatur qui
+        explicabo veniam!
+      </ColorScreens>
+      <ColorScreens {...content[5]}>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+        placeat aut totam fugit et explicabo recusandae vitae sunt sit quisquam
+        officiis reprehenderit nostrum quidem rem, eos debitis magnam
+        consequatur. Pariatur!
+      </ColorScreens>
+      <ColorScreens {...content[6]}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est quis
+        earum nam doloremque, vero excepturi architecto repellat voluptatem
+        laboriosam! Corporis repellat illum vero blanditiis quam itaque vel
+        minus eum!
+      </ColorScreens>
+      <PricingComponent />
     </>
   );
 }
