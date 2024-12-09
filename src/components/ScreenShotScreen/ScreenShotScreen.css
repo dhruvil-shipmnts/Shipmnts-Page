@@ -1,0 +1,37 @@
+.screenshot-screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  height: 100%;
+  max-width: 100vw;
+}
+
+.title-container-screenshot {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.title-image {
+  height: 25%;
+  margin-bottom: 1rem;
+}
+.highlight-center-f {
+  width: 100%;
+  height: 100%;
+}
+.slick-slide{
+    display: flex !important; 
+    justify-content: center !important; 
+}
+
+.slick-dots button{
+    background-color: #FF6F61 !important;
+}
+.slick-arrow{
+    color: black !important;
+}

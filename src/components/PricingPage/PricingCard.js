@@ -15,7 +15,7 @@ export default function PricingCard({ planType, price, perYearPrice, text }) {
           <p>
             {text}
           </p>
-          <CustomButton style={{ color: "#7A1600" }}>
+          <CustomButton style={{ color: "#7A1600", backgroundColor: '#ffffff' }}>
             Schedule Demo
           </CustomButton>
         </div>

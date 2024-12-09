@@ -12,6 +12,14 @@ import Team from "../src/components/CarouselScreen/team.png";
 import Web from "../src/components/CarouselScreen/web.png";
 import Security from "../src/components/CarouselScreen/security.png";
 import PricingComponent from "./components/PricingPage/PricingComponent";
+import ScreenShotScreen from "./components/ScreenShotScreen/ScreenShotScreen";
+import Circles from "../src/components/ScreenShotScreen/image/circles.png";
+import Mobile from "../src/components/ScreenShotScreen/image/mobile.png";
+import SceenShot from "../src/components/ScreenShotScreen/image/screenshot.png";
+import SceenShot1 from "../src/components/ScreenShotScreen/image/screenshot1.png";
+import Box from "../src/components/ScreenShotScreen/image/box.png";
+import Scroll from "../src/components/ScreenShotScreen/image/scroll.png";
+import Eye from "../src/components/ScreenShotScreen/image/eye.png";
 function App() {
   const content = [
     {
@@ -58,11 +66,58 @@ function App() {
       titleColor: "#7A1600",
     },
   ];
+  const screenShotContent = [
+    {
+      upperImage: Box,
+      title:
+        "Instant Experiences for your Customers",
+      backgroundColor: "#FFF2E2",
+      titleColor: "#7A1600",
+      images: [
+        { imgSrc: SceenShot1, title: "Self service shipment management / live DSR and Document collaboration" },
+        { imgSrc: SceenShot1, title: "No login Public link" },
+        { imgSrc: SceenShot1, title: "Pay invoices / faster payments/collection" },
+        { imgSrc: SceenShot1, title: "Rich insights" },
+      ],
+    },
+    {
+      upperImage: Scroll,
+      lowerImage: Eye,
+      title:
+        "Controls & insights your  management will love",
+      backgroundColor: "#FAE8FF",
+      titleColor: "#60007B",
+      images: [
+        { imgSrc: SceenShot, title: "Get Ai Generated reports" },
+        { imgSrc: SceenShot, title: "Make faster decisions with instant insights around customers, trade lanes, revenue, volume & margins" },
+        { imgSrc: SceenShot, title: "Monitor shipment progress, track & resolve exceptions faster" },
+        { imgSrc: SceenShot, title: "Track collections and outstanding" },
+        { imgSrc: SceenShot, title: "Auto hold business with low margin or credit heavy customers" },
+      ],
+    },
+    {
+      upperImage: Mobile,
+      lowerImage: Circles,
+      title:
+        "Productivity & multi party collaboration",
+      backgroundColor: "#FFF2E2",
+      titleColor: "#7A1600",
+      images: [
+        { imgSrc: SceenShot, title: "Mobile App" },
+        { imgSrc: SceenShot, title: "Chats" },
+        { imgSrc: SceenShot, title: "Doc upload & download" },
+        { imgSrc: SceenShot, title: "Show multi parties collaborating" },
+      ],
+    },
+  ];
   return (
     <>
       <Header />
       <LandingPage />
       <Highlight />
+      <ScreenShotScreen {...screenShotContent[0]} />
+      <ScreenShotScreen {...screenShotContent[1]} />
+      <ScreenShotScreen {...screenShotContent[2]} />
       <ColorScreens {...content[4]}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
         laborum esse suscipit temporibus fugit numquam illo placeat eum eaque
