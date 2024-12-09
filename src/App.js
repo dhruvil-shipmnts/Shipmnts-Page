@@ -199,8 +199,8 @@ function App() {
         laboriosam! Corporis repellat illum vero blanditiis quam itaque vel
         minus eum!
       </ColorScreens>
-      <PricingComponent id="pricing"/>
-      <AboutSection id="about"/>
+      <PricingComponent />
+      <AboutSection />
     </>
   );
 }
