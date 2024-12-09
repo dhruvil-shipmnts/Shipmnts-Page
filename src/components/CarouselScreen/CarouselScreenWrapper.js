@@ -1,6 +1,6 @@
 import React from "react";
 import "../CarouselScreen/CarouselScreenWrapper.css";
-export default function ({
+export default function CarouselScreenWrapper({
   backgroundColor,
   titleColor,
   title,
