@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
   max-width: 100vw;
+  padding: 3rem 0;
 }
 
 .title-container-screenshot {
@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .title-image {
@@ -22,15 +22,4 @@
 .highlight-center-f {
   width: 100%;
   height: 100%;
-}
-.slick-slide{
-    display: flex !important; 
-    justify-content: center !important; 
-}
-
-.slick-dots button{
-    background-color: #FF6F61 !important;
-}
-.slick-arrow{
-    color: black !important;
 }

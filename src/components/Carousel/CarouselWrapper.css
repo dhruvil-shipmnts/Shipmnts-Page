@@ -1,4 +1,10 @@
-.carousel-wrapper {
-    height: 100%;
-    width: 100%;
+
+.slick-dots li button:before {
+    font-size: 0.8rem;
+    color: white !important;
+    margin: 1rem;
 }
+
+.slick-arrow {
+    display: none !important;
+  }

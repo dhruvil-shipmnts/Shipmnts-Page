@@ -1,12 +1,37 @@
 import React from "react";
-import { Carousel } from "antd";
-function CarouselWrapper({children}) {
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "../Carousel/CarouselWrapper.css"
+function CarouselWrapper({ children }) {
+  const settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    centerMode: true,
+    autoPlay: true,
+    autoplaySpeed: 2000,
+    speed: 2000,
+    cssEase: "linear",
+    infinite: true,
+    appendDots: dots => (
+      <div
+        style={{
+          borderRadius: "10px",
+          textAlign: 'left',
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+
+  };
   return (
-    <>
-      <Carousel arrows={true} infinite={false} dots={true}>
-        {children}
-      </Carousel>
-    </>
+    <div className="slider-container">
+      <Slider {...settings}>{children}</Slider>
+    </div>
   );
 }
 

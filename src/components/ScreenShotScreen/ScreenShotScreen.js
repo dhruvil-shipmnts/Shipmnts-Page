@@ -1,7 +1,7 @@
 import React from "react";
 import ScreenShotLoader from "./ScreenShotLoader";
 import CarouselWrapper from "../Carousel/CarouselWrapper";
-import "../ScreenShotScreen/ScreenShotScreen.css"
+import "../ScreenShotScreen/ScreenShotScreen.css";
 export default function ScreenShotScreen({
   backgroundColor,
   titleColor,
@@ -18,20 +18,23 @@ export default function ScreenShotScreen({
       }}
     >
       <div className="title-container-screenshot">
-      {upperImage && <img className="title-image" src={upperImage} alt="Upper"></img>}
-      <h6 className="page-title" style={{ color: titleColor || "#000000" }}>
-        {title}
-      </h6>
-      {lowerImage && <img className="title-image" src={lowerImage} alt="Lower"></img>}
+        {upperImage && (
+          <img className="title-image" src={upperImage} alt="Upper"></img>
+        )}
+        <h6 className="page-title" style={{ color: titleColor || "#000000" }}>
+          {title}
+        </h6>
+        {lowerImage && (
+          <img className="title-image" src={lowerImage} alt="Lower"></img>
+        )}
       </div>
       <div className="highlight-center-f">
-
-      <CarouselWrapper>
-        {(images || []).map((e, index) => {
-          return <ScreenShotLoader key={index} {...e}/>;
-        })}
-      </CarouselWrapper>
-        </div>
+        <CarouselWrapper>
+          {(images || []).map((e, index) => {
+            return <ScreenShotLoader key={index} {...e} />;
+          })}
+        </CarouselWrapper>
+      </div>
     </div>
   );
 }
