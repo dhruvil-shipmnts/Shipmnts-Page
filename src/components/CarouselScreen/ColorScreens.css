@@ -4,12 +4,11 @@
   align-items: center;
   justify-content: space-around;
   padding: 3.5rem;
-  height: 80vh;
 }
 
 .colorpage-title {
   height: 8%;
-  width: 90%;
+  width: 40%;
   margin-top: 0;
   font-size: 2rem;
   text-align: center;
@@ -17,11 +16,13 @@
 }
 
 .colorpage-image {
-  max-width: 80%;
+  /* max-width: 80%; */
   height: 60%;
+  width: 100%;
   margin-bottom: 2rem;
 }
 
 .colorpage-text{
   font-size: 1rem;
+  width: 60%;
 }

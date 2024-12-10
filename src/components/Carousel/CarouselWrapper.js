@@ -11,7 +11,7 @@ function CarouselWrapper({ children }) {
     slidesToScroll: 1,
     swipeToSlide: true,
     centerMode: true,
-    autoPlay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
     infinite: true,
