@@ -32,7 +32,7 @@ export default function TabScreen({
           {upperImage && (
             <img className="title-image" src={upperImage} alt="Upper"></img>
           )}
-          <h6 className="page-title" style={{ color: titleColor || "#000000" }}>
+          <h6 className="screenshot-screen-title" style={{ color: titleColor || "#000000" }}>
             {title}
           </h6>
           {lowerImage && (

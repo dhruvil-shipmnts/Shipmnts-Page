@@ -1,0 +1,14 @@
+.arcade{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    background-color: #f8f7f2;
+}
+
+.arcade-title {
+    text-align: left;
+    width: 100%;
+}

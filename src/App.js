@@ -18,13 +18,15 @@ import Mobile from "../src/components/ScreenShotScreen/image/mobile.png";
 import SceenShot from "../src/components/ScreenShotScreen/image/screenshot.png";
 import SceenShot1 from "../src/components/ScreenShotScreen/image/screenshot1.png";
 import Box from "../src/components/ScreenShotScreen/image/box.png";
+import Globe from "../src/components/ScreenShotScreen/image/globe.svg";
 import Scroll from "../src/components/ScreenShotScreen/image/scroll.png";
 import Eye from "../src/components/ScreenShotScreen/image/eye.png";
 import TabScreen from "./components/TabScreen/TabScreen";
 import TabContainer from "./components/TabScreen/TabContainer";
-import WhiteTeam from "../src/components/TabScreen/team.png"
-import WhiteCircles from "../src/components/TabScreen/whiteCircles.png"
+import WhiteTeam from "../src/components/TabScreen/team.png";
+import WhiteCircles from "../src/components/TabScreen/whiteCircles.png";
 import AboutSection from "./components/AboutSection/AboutSection";
+import Arcade from "./components/Arcade/Arcade";
 function App() {
   const content = [
     {
@@ -74,6 +76,7 @@ function App() {
   const screenShotContent = [
     {
       upperImage: Box,
+      lowerImage: Globe,
       title: "Instant Experiences for your Customers",
       backgroundColor: "#FFF2E2",
       titleColor: "#7A1600",
@@ -176,9 +179,16 @@ function App() {
     <>
       <Header />
       <LandingPage />
-      <Highlight/>
+      <Highlight />
+      <Arcade />
+    
       <ScreenShotScreen {...screenShotContent[0]} />
-      <TabScreen upperImage={WhiteTeam} lowerImage={WhiteCircles} title="AI-Driven Apps for More Efficient Teams" items={items} />
+      <TabScreen
+        upperImage={WhiteTeam}
+        lowerImage={WhiteCircles}
+        title="AI-Driven Apps for More Efficient Teams"
+        items={items}
+      />
       <ScreenShotScreen {...screenShotContent[1]} />
       <ScreenShotScreen {...screenShotContent[2]} />
       <ColorScreens {...content[4]}>

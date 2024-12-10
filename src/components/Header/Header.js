@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import Image from "./image.png";
 import CustomButton from "../Button/CustomButton";
-import Play from "../Button/play.png"
+import Play from "../Button/play.svg"
 import { HashLink as Link } from "react-router-hash-link";
 export default function Header() {
   return (

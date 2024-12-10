@@ -2,7 +2,7 @@ import React from "react";
 import PricingCard from "./PricingCard";
 import "../PricingPage/PricingComponent.css";
 import CustomButton from "../Button/CustomButton";
-import Play from '../Button/play.png'
+import Play from '../Button/play.svg'
 export default function PricingComponent() {
   const content = [
     {

@@ -2,7 +2,7 @@ import React from 'react';
 import './LandingPage.css'; 
 import LandingImage from '../LandingPage/landingImage.png'
 import CustomButton from '../Button/CustomButton';
-import Play from '../Button/play.png' 
+import Play from '../Button/play.svg' 
 const LandingPage = () => {
   return (
     <div className="main-content">

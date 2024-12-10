@@ -57,10 +57,9 @@ const Highlight = () => {
   ];
   return (
     <div id="products" className="highlight-container">
-      {/* Title Section */}
       <div className="highlight-center">
         <div className="title-container">
-          <h1 className="title-highlight">Welcome to Our Platform</h1>
+          <h1 className="title-highlight">Highlights</h1>
         </div>
 
         <CarouselWrapper>
