@@ -13,7 +13,6 @@ function CarouselWrapper({ children }) {
     centerMode: true,
     autoPlay: true,
     autoplaySpeed: 2000,
-    speed: 2000,
     cssEase: "linear",
     infinite: true,
     appendDots: dots => (
