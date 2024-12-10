@@ -9,8 +9,10 @@ export default function CustomButton({ style, children,link }) {
       <div
         style={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "space-around",
           alignItems: "center",
+          width: '3.5rem',
+          padding: '0.1rem'
         }}
       >
         {children}

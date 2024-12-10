@@ -1,28 +1,26 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
-    padding: 3rem;
-    height: 75vh;
-    /* width: 65%; */
+    padding: 1.5rem;
+    height: 65vh;
+    width: 55vw;
     border-radius: 1rem;
     margin: 0 0.5rem;
   }
   
   .page-title {
-    height: 10%;
-    width: 100%;
+    width: 75%;
     margin-top: 0;
     font-size: 2.2rem;
     text-align: left;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+    font-weight:400;
+    margin-bottom: 1rem;
   }
   
   .page-image {
-    max-width: 80%;
-    height: 80%;
-    margin-bottom: 3rem;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
   }
   

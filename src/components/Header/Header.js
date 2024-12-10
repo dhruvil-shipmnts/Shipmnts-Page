@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import Image from "./image.png";
 import CustomButton from "../Button/CustomButton";
-import Play from "../Button/play.svg"
+import Play from "../Button/play.svg";
 import { HashLink as Link } from "react-router-hash-link";
 export default function Header() {
   return (
@@ -10,9 +10,15 @@ export default function Header() {
       <div className="header-container">
         <img className="logo" src={Image} alt="Logo" />
         <nav className="nav">
-          <Link smooth to="#products">Products</Link>
-          <Link smooth to="#pricing">Pricing</Link>
-          <Link smooth to="#about">About us</Link>
+          <Link smooth to="#products">
+            Products
+          </Link>
+          <Link smooth to="#pricing">
+            Pricing
+          </Link>
+          <Link smooth to="#about">
+            About us
+          </Link>
         </nav>
         <div className="actions">
           <CustomButton
@@ -23,8 +29,8 @@ export default function Header() {
             }}
             link={"https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii"}
           >
-            Demo
             <img src={Play} alt="" />
+            <span>Demo</span>
           </CustomButton>
           <CustomButton
             style={{

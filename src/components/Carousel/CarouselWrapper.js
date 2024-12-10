@@ -1,35 +1,36 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import "../Carousel/CarouselWrapper.css"
-function CarouselWrapper({ children }) {
-  const settings = {
-    dots: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    swipeToSlide: true,
-    centerMode: true,
-    cssEase: "linear",
-    infinite: true,
-    appendDots: dots => (
-      <div
-        style={{
-          borderRadius: "10px",
-          textAlign: 'left',
-        }}
-      >
-        <ul style={{ margin: "0px" }}> {dots} </ul>
-      </div>
-    ),
 
-  };
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+import { Pagination, Mousewheel } from "swiper/modules";
+
+export default function CarouselWrapper({ children }) {
   return (
-    <div className="slider-container">
-      <Slider {...settings}>{children}</Slider>
-    </div>
+    <>
+      <Swiper
+        slidesPerView={"auto"}
+        centeredSlides={true}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        loop={true}
+        modules={[Pagination, Mousewheel]}
+        mousewheel={true}
+        direction="horizantal"
+      >
+        {(children || []).map((e, index) => {
+          return <SwiperSlide key={index}>{e}</SwiperSlide>;
+        })}
+      </Swiper>
+    </>
   );
 }
-
-export default CarouselWrapper;

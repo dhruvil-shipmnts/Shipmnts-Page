@@ -181,7 +181,7 @@ function App() {
       <LandingPage />
       <Highlight />
       <Arcade />
-    
+
       <ScreenShotScreen {...screenShotContent[0]} />
       <TabScreen
         upperImage={WhiteTeam}
