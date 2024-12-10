@@ -25,7 +25,6 @@ export default function CarouselWrapper({ children }) {
         loop={true}
         modules={[Pagination, Mousewheel]}
         mousewheel={true}
-        direction="horizantal"
       >
         {(children || []).map((e, index) => {
           return <SwiperSlide key={index}>{e}</SwiperSlide>;
