@@ -12,7 +12,7 @@ function CarouselWrapper({ children }) {
     swipeToSlide: true,
     centerMode: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1200,
     cssEase: "linear",
     infinite: true,
     appendDots: dots => (
