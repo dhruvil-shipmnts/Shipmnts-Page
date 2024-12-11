@@ -3,21 +3,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 3.5rem;
+  padding: 3.5rem 0;
 }
 
 .colorpage-title {
   height: 8%;
-  width: 40%;
+  width: 42%;
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: 500;
 }
 
 .colorpage-image {
   /* max-width: 80%; */
-  height: 60%;
   width: 100%;
   margin-bottom: 2rem;
 }

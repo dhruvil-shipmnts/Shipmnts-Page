@@ -19,6 +19,7 @@
 .title-image {
   height: 8vh;
   margin-bottom: 1rem;
+  max-width: 100%;
 }
 .highlight-center-f {
   width: 100%;
@@ -29,7 +30,7 @@
   height: 10%;
   width: 70%;
   margin-top: 0;
-  font-size: 2.2rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: 500;
   margin-bottom: 0.6rem;
