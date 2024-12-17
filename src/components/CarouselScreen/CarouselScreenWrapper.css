@@ -23,4 +23,26 @@
     align-items: center;
     overflow: hidden;
   }
+
+
+  @media (max-width: 550px) {
+    .page-container {
+      height: 35vh;
+      width: 85vw;
+    }
+    .page-title {
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 551px) and (max-width: 950px) {
+    .page-container {
+      height: 55vh;
+      width: 65vw;
+    }
+    .page-title {
+      width: 90%;
+    }
+  }
+  
   

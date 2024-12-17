@@ -4,7 +4,7 @@
   align-items: center;
   max-width: 100vw;
   padding: 2.5rem 0;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
 }
 
 .title-container-screenshot {
@@ -17,9 +17,9 @@
 }
 
 .title-image {
-  height: 8vh;
+  height: 6vh;
   margin-bottom: 1rem;
-  max-width: 100%;
+  max-width: 90%;
 }
 .highlight-center-f {
   width: 100%;
@@ -35,3 +35,12 @@
   font-weight: 500;
   margin-bottom: 0.6rem;
 }
+
+
+@media (max-width: 550px) {
+  .title-image {
+    height: 4vh;
+  }
+}
+
+

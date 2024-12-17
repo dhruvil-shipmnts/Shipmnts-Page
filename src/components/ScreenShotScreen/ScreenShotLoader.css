@@ -1,18 +1,25 @@
-.screen-shot-loader{
-    background-color: #ffffff;
-    border-radius: 1rem;
-    padding: 1rem;
-    width: 65vw;
+.screen-shot-loader {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 55vw;
 }
-.screen-shot-title{
-    color: black;
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin: 0.5rem ;
-    width: 80%;
-    margin-bottom: 1.5rem;
+.screen-shot-title {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0.5rem;
+  width: 85%;
+  margin-bottom: 1.5rem;
 }
-.screen-shot{
-    width: 100%;
-    height: 70%;
+.screen-shot {
+  width: 100%;
+  height: 70%;
 }
+
+@media (max-width: 650px) {
+  .screen-shot-loader {
+    width: 85vw;
+  }
+}
+

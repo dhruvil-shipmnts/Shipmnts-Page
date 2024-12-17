@@ -4,19 +4,20 @@ import React from "react";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Highlight from "./components/HighlightSection/Highlight";
 import ColorScreens from "./components/CarouselScreen/ColorScreens";
-import Balance from "../src/components/CarouselScreen/balance.png";
-import Colobrate from "../src/components/CarouselScreen/colobrate.png";
-import Genai from "../src/components/CarouselScreen/genai.png";
-import Suppot from "../src/components/CarouselScreen/support.png";
-import Team from "../src/components/CarouselScreen/team.png";
-import Web from "../src/components/CarouselScreen/web.png";
-import Security from "../src/components/CarouselScreen/security.png";
-import PricingComponent from "./components/PricingPage/PricingComponent";
+import Balance from "../src/components/CarouselScreen/colorScreenImage/Balance.svg";
+import Suppot from "../src/components/CarouselScreen/colorScreenImage/Support.svg";
+import Security from "../src/components/CarouselScreen/colorScreenImage/Security.svg";
 import ScreenShotScreen from "./components/ScreenShotScreen/ScreenShotScreen";
 import Circles from "../src/components/ScreenShotScreen/image/circles.png";
 import Mobile from "../src/components/ScreenShotScreen/image/mobile.png";
 import SceenShot from "../src/components/ScreenShotScreen/image/screenshot.png";
-import SceenShot1 from "../src/components/ScreenShotScreen/image/screenshot1.png";
+import MobileApp from "../src/components/ScreenShotScreen/image/ProductivityCollaboration/MobileApp.svg";
+import ContextualChat from "../src/components/ScreenShotScreen/image/ProductivityCollaboration/ContextualChat.svg";
+import ContextualEmail from "../src/components/ScreenShotScreen/image/ProductivityCollaboration/ContextualEmail.svg";
+import PublicLink from "../src/components/ScreenShotScreen/image/CustomerExperience/PublicLink.svg";
+import ShipperInsight from "../src/components/ScreenShotScreen/image/CustomerExperience/ShipperInsight.svg";
+import OrderManagement from "../src/components/ScreenShotScreen/image/CustomerExperience/OrderManagement.svg";
+import DocumentCollaboration from "../src/components/ScreenShotScreen/image/CustomerExperience/DocumentCollaboration.svg";
 import Box from "../src/components/ScreenShotScreen/image/box.png";
 import Globe from "../src/components/ScreenShotScreen/image/globe.svg";
 import Scroll from "../src/components/ScreenShotScreen/image/scroll.png";
@@ -30,32 +31,7 @@ import Arcade from "./components/Arcade/Arcade";
 function App() {
   const content = [
     {
-      title:
-        "Digital Platform for your Customers / Instant Experiences for your customers",
-      imageSrc: Web,
-      backgroundColor: "#FFF2E2",
-      titleColor: "#7A1600",
-    },
-    {
-      title: "AI first apps for more efficient teams",
-      imageSrc: Team,
-      backgroundColor: "#FEFFC7",
-      titleColor: "#7A1600",
-    },
-    {
-      title: "Actionable Insights for Faster Decisions",
-      imageSrc: Genai,
-      backgroundColor: "#FAE8FF",
-      titleColor: "#60007B",
-    },
-    {
-      title: "Productivity & Multi-Party Collaboration toolkit",
-      imageSrc: Colobrate,
-      backgroundColor: "#FFF2E2",
-      titleColor: "#7A1600",
-    },
-    {
-      title: "Personalised and Proactive Support you can count on",
+      title: "Learn and grow better with excellent support and resources",
       imageSrc: Suppot,
       backgroundColor: "#FEFFC7",
       titleColor: "#7A1600",
@@ -67,7 +43,7 @@ function App() {
       titleColor: "#60007B",
     },
     {
-      title: "Cutting-edge software at Forwarder Friendly Prices",
+      title: "With Great Power comes Great Security",
       imageSrc: Balance,
       backgroundColor: "#FFF2E2",
       titleColor: "#7A1600",
@@ -81,17 +57,13 @@ function App() {
       backgroundColor: "#FFF2E2",
       titleColor: "#7A1600",
       images: [
+        { imgSrc: PublicLink, title: "No login Public link" },
         {
-          imgSrc: SceenShot1,
-          title:
-            "Self service shipment management / live DSR and Document collaboration",
+          imgSrc: ShipperInsight,
+          title: "Shipper Insight",
         },
-        { imgSrc: SceenShot1, title: "No login Public link" },
-        {
-          imgSrc: SceenShot1,
-          title: "Pay invoices / faster payments/collection",
-        },
-        { imgSrc: SceenShot1, title: "Rich insights" },
+        { imgSrc: DocumentCollaboration, title: "Document Collaboration" },
+        { imgSrc: OrderManagement, title: "Order Management" },
       ],
     },
     {
@@ -125,10 +97,9 @@ function App() {
       backgroundColor: "#FFF2E2",
       titleColor: "#7A1600",
       images: [
-        { imgSrc: SceenShot, title: "Mobile App" },
-        { imgSrc: SceenShot, title: "Chats" },
-        { imgSrc: SceenShot, title: "Doc upload & download" },
-        { imgSrc: SceenShot, title: "Show multi parties collaborating" },
+        { imgSrc: MobileApp, title: "Mobile App" },
+        { imgSrc: ContextualChat, title: "Contextual Actions & Chat" },
+        { imgSrc: ContextualEmail, title: "Contextual Email Collaboration" },
       ],
     },
   ];
@@ -191,25 +162,25 @@ function App() {
       />
       <ScreenShotScreen {...screenShotContent[1]} />
       <ScreenShotScreen {...screenShotContent[2]} />
-      <ColorScreens {...content[4]}>
+      <ColorScreens {...content[0]}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
         laborum esse suscipit temporibus fugit numquam illo placeat eum eaque
         architecto excepturi dolor sint rem, ipsum error aspernatur qui
         explicabo veniam!
       </ColorScreens>
-      <ColorScreens {...content[5]}>
+      <ColorScreens {...content[1]}>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
         placeat aut totam fugit et explicabo recusandae vitae sunt sit quisquam
         officiis reprehenderit nostrum quidem rem, eos debitis magnam
         consequatur. Pariatur!
       </ColorScreens>
-      <ColorScreens {...content[6]}>
+      <ColorScreens {...content[2]}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est quis
         earum nam doloremque, vero excepturi architecto repellat voluptatem
         laboriosam! Corporis repellat illum vero blanditiis quam itaque vel
         minus eum!
       </ColorScreens>
-      <PricingComponent />
+      {/* <PricingComponent /> */}
       <AboutSection />
     </>
   );

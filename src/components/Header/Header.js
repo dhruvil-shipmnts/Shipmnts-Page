@@ -3,13 +3,13 @@ import "./Header.css";
 import Image from "./image.png";
 import CustomButton from "../Button/CustomButton";
 import Play from "../Button/play.svg";
-import { HashLink as Link } from "react-router-hash-link";
+// import { HashLink as Link } from "react-router-hash-link";
 export default function Header() {
   return (
     <header className="header">
       <div className="header-container">
         <img className="logo" src={Image} alt="Logo" />
-        <nav className="nav">
+        {/* <nav className="nav">
           <Link smooth to="#products">
             Products
           </Link>
@@ -19,7 +19,7 @@ export default function Header() {
           <Link smooth to="#about">
             About us
           </Link>
-        </nav>
+        </nav> */}
         <div className="actions">
           <CustomButton
             style={{
