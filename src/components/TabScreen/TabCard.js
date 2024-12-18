@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../TabScreen/TabCard.css";
 import Modal from "../Modal/Modal";
 import ModalContent from "../Modal/ModalContent";
-
+import Plus from "../TabScreen/plus.svg";
 export default function TabCard({ title, paragraphs, style, images }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleCloseModal = () => {
@@ -27,7 +27,11 @@ export default function TabCard({ title, paragraphs, style, images }) {
         <h2>{title}</h2>
         <div className="tab-button-div">
           <button className="tab-add-button" onClick={handleModalOpen}>
-            +
+            <img
+              style={{ width: "80%", height: "80%" }}
+              src={Plus}
+              alt="Plus"
+            />
           </button>
         </div>
       </div>

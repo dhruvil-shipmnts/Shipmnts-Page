@@ -19,18 +19,21 @@
 }
 
 .tab-button-div {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 .tab-add-button {
   border-radius: 50%;
   background-color: #ffffff;
   padding: 4px;
-  font-weight: 500;
   width: 40px;
   height: 40px;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 550px) {
