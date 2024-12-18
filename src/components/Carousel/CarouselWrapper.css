@@ -9,7 +9,11 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: white !important;
+  background-color: rgb(255, 255, 255) !important;
   height: 1rem !important;
   width: 1rem !important;
+  opacity: 0.5 !important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
 }

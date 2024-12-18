@@ -28,6 +28,7 @@ import WhiteTeam from "../src/components/TabScreen/team.png";
 import WhiteCircles from "../src/components/TabScreen/whiteCircles.png";
 import AboutSection from "./components/AboutSection/AboutSection";
 import Arcade from "./components/Arcade/Arcade";
+import Paragraph from "antd/es/skeleton/Paragraph";
 function App() {
   const content = [
     {
@@ -110,12 +111,37 @@ function App() {
       children: (
         <TabContainer
           items={[
-            "Lead & Activity management",
-            "Configurable Pipelines",
-            "Inquiry & Quotations",
-            "Task Management",
-            "Rate Explorer",
-            "Lead Analytics & more",
+            {
+              title: "Lead & Activity management",
+              paragraphs: [
+                "Bulk-select your employees to enable a fast and efficient solution to making changes to multiple employees at the same time, for example update their manager, add a new absence policy, or send a form for feedback on life at your company."],
+              images: [SceenShot, SceenShot, SceenShot],
+            },
+            {
+              paragraphs: ["lorem"],
+              images: [SceenShot, SceenShot],
+              title: "Configurable Pipelines",
+            },
+            {
+              paragraphs: ["lorem"],
+              images: [SceenShot, SceenShot],
+              title: "Inquiry & Quotations",
+            },
+            {
+              paragraphs: ["lorem"],
+              images: [SceenShot, SceenShot],
+              title: "Task Management",
+            },
+            {
+              paragraphs: ["lorem"],
+              images: [SceenShot, SceenShot],
+              title: "Rate Explorer",
+            },
+            {
+              paragraphs: ["lorem"],
+              images: [SceenShot, SceenShot],
+              title: "Lead Analytics & more",
+            },
           ]}
         />
       ),
