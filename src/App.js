@@ -28,7 +28,6 @@ import WhiteTeam from "../src/components/TabScreen/team.png";
 import WhiteCircles from "../src/components/TabScreen/whiteCircles.png";
 import AboutSection from "./components/AboutSection/AboutSection";
 import Arcade from "./components/Arcade/Arcade";
-import Paragraph from "antd/es/skeleton/Paragraph";
 function App() {
   const content = [
     {
