@@ -24,7 +24,7 @@
   position: relative !important;
   padding-top: 1.5rem;
   margin: 0 1rem;
-  text-align: center !important;
+  text-align: left !important;
 }
 
 @media (max-width: 600px) {
