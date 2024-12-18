@@ -3,7 +3,6 @@ import TabCard from "./TabCard";
 import "../TabScreen/TabContainer.css"
 
 export default function TabContainer({ items }) {
-  console.log("This sis items", items);
   return (
     <div className="tab-container">
       {(items || []).map((e, index) => {
