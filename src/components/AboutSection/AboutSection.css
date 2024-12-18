@@ -2,5 +2,12 @@
     background-color: #f8f7f2;
     padding:1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4.2rem;
+}
+
+.about-para {
+    font-weight: 400;
+    color:#7A1600;
 }

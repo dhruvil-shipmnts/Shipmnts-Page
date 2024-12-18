@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 export default function CarouselWrapper({ children }) {
   return (
@@ -17,12 +17,13 @@ export default function CarouselWrapper({ children }) {
       <Swiper
         slidesPerView={"auto"}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={20}
         pagination={{
           clickable: true,
         }}
+        navigation={true}
         loop={true}
-        modules={[Pagination]}
+        modules={[Navigation, Pagination]}
         mousewheel={true}
       >
         {(children || []).map((e, index) => {

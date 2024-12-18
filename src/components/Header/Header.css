@@ -3,9 +3,8 @@
     top: 0;
     z-index: 1000;
     background-color: #F8F7F2;
-    padding: 10px 20px;
+    padding: 1.2rem 4.2rem;
     max-width: 100vw;
-    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +19,7 @@
   }
   
   .logo {
-    height: 100%;
+    height: 2.7vh;
   }
   
   .nav a {
@@ -47,10 +46,16 @@
   
   .signin-button {
     background: none;
-    border: 1px solid #ff6f61;
-    color: #ff6f61;
+    /* border: 1px solid #ff6f61; */
+    /* color: #ff6f61; */
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .header{
+      padding: 2.7rem 2rem;
+    }
   }
   

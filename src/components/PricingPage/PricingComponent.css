@@ -1,6 +1,5 @@
 .pricing-page {
-  height: 120vh;
-  background: linear-gradient(175deg, #ff7152 18.06%, #f8f7f2 85.46%);
+  background: #ff7152;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,10 +32,17 @@
 }
 
 .pricing-title {
-  height: 8%;
-  font-size: 1.8rem;
+  font-size: 3.6rem;
   color: #ffffff;
   text-align: center;
   font-weight: 500;
   margin-bottom: 2rem;
+  width: 90%;
+  line-height: normal;
+}
+
+@media (max-width: 550px) { 
+  .pricing-title {
+    width: 100%;
+  }
 }

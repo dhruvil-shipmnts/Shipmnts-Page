@@ -11,11 +11,18 @@ const LandingPage = () => {
         <p className="subtitle">
           Streamline your day-to-day operations, boost shipment profits, and delight your customers.
         </p>
-        <div className="cta">
-        <CustomButton link="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii" style={{color: '#ffffff', background: '#ff6f61'}}>Demo 
-          <img src={Play} alt="" />
-        </CustomButton>
-        </div>
+        <CustomButton
+            style={{
+              color: "#ffffff",
+              background: "#ff6f61",
+              padding: "10px 20px"
+            }
+          }
+            link={"https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii"}
+          >
+            <span style={{ fontWeight: 600, display: "inline-block", marginRight: "8px" }}>Get Demo</span>
+            <img src={Play} alt="" />
+          </CustomButton>
       </div>
 
       <div className="details-section">

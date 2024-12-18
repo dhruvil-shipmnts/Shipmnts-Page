@@ -28,13 +28,14 @@
 .close-button {
   border-radius: 50%;
   background-color: #fef3c7;
-  /* padding: 2px; */
   width: 30px;
   height: 30px;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-title-div {

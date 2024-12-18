@@ -1,12 +1,17 @@
 .custom-button {
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4rem;
-    cursor: pointer;
-  }
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+.custom-button-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  @media(max-width:550px){
-    .custom-button {
-      padding: 4px 8px;
-    }
+@media (max-width: 550px) {
+  .custom-button {
+    padding: 4px 8px;
   }
+}

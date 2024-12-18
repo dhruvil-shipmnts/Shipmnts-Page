@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import Image from "./image.png";
+import Shipmnts from "./shipmnts.svg";
 import CustomButton from "../Button/CustomButton";
 import Play from "../Button/play.svg";
 // import { HashLink as Link } from "react-router-hash-link";
@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <img className="logo" src={Image} alt="Logo" />
+        <img className="logo" src={Shipmnts} alt="Logo" />
         {/* <nav className="nav">
           <Link smooth to="#products">
             Products
@@ -26,21 +26,32 @@ export default function Header() {
               color: "#ffffff",
               background: "#ff6f61",
               marginRight: "1rem",
+              padding: "6px 14px",
             }}
             link={"https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii"}
           >
+            <span
+              style={{
+                fontWeight: "600",
+                display: "inline-block",
+                marginRight: "8px",
+              }}
+            >
+              Get Demo
+            </span>
             <img src={Play} alt="" />
-            <span>Demo</span>
           </CustomButton>
           <CustomButton
             style={{
-              background: "none",
-              color: "#ff6f61",
-              border: "1px solid #ff6f61",
+              background: "#FFFFFF",
+              color: "#3A2B2B",
+              padding: "6px 16px",
             }}
             link="https://booking.shipmnts.com/"
           >
-            Sign In
+            <span style={{ fontWeight: "600" }}>
+              Sign In
+            </span>
           </CustomButton>
         </div>
       </div>

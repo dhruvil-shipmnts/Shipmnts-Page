@@ -28,6 +28,7 @@ import WhiteTeam from "../src/components/TabScreen/team.png";
 import WhiteCircles from "../src/components/TabScreen/whiteCircles.png";
 import AboutSection from "./components/AboutSection/AboutSection";
 import Arcade from "./components/Arcade/Arcade";
+import PricingComponent from "./components/PricingPage/PricingComponent";
 function App() {
   const content = [
     {
@@ -205,7 +206,7 @@ function App() {
         laboriosam! Corporis repellat illum vero blanditiis quam itaque vel
         minus eum!
       </ColorScreens>
-      {/* <PricingComponent /> */}
+      <PricingComponent />
       <AboutSection />
     </>
   );
