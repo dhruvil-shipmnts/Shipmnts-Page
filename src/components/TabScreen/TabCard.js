@@ -3,7 +3,7 @@ import "../TabScreen/TabCard.css";
 import Modal from "../Modal/Modal";
 import ModalContent from "../Modal/ModalContent";
 import Plus from "../TabScreen/plus.svg";
-export default function TabCard({ title, paragraphs, style, images }) {
+export default function TabCard({ index, titles, paragraphs, style, images }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleCloseModal = () => {
     setIsOpen(false);
@@ -20,11 +20,17 @@ export default function TabCard({ title, paragraphs, style, images }) {
   };
   return (
     <>
-      <Modal title={title} isOpen={isOpen} onClose={handleCloseModal}>
-        <ModalContent paragraphs={paragraphs} images={images} />
+      <Modal isOpen={isOpen}>
+        <ModalContent
+          index={index}
+          onClose={handleCloseModal}
+          titles={titles}
+          paragraphs={paragraphs}
+          images={images}
+        />
       </Modal>
       <div className="tab-card" style={style}>
-        <h2>{title}</h2>
+        <h2>{titles[index]}</h2>
         <div className="tab-button-div">
           <button className="tab-add-button" onClick={handleModalOpen}>
             <img

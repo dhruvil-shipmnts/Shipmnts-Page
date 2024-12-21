@@ -1,12 +1,13 @@
 .tab-card {
   height: 35vh;
-  width: 28%;
+  width: calc(28% - 1.2rem);
   padding: 1rem;
   border-radius: 0.75rem;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 1.2rem;
 }
 
 .tab-card h2 {
@@ -36,7 +37,7 @@
   align-items: center;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 560px) {
   .tab-card {
     width: 90%;
     flex-direction: row;
@@ -45,10 +46,11 @@
     align-items: center;
   }
 }
-@media (min-width: 551px) and (max-width: 800px) {
+@media (min-width: 561px) and (max-width: 700px) {
   .tab-card {
     padding: 1rem;
     height: 30vh;
+    width: calc(45% - 1.2rem);
   }
   .tab-card h2 {
     font-size: 1.8rem;

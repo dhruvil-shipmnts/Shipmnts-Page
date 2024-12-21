@@ -27,7 +27,7 @@
 
   @media (max-width: 550px) {
     .page-container {
-      height: 35vh;
+      height: 30vh;
       width: 85vw;
     }
     .page-title {
