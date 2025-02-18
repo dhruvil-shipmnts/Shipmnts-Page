@@ -1,23 +1,22 @@
-import React from "react";
-import { Tabs, ConfigProvider } from "antd";
+import React from 'react';
+import { Tabs, ConfigProvider } from 'antd';
 export default function TabScreen({
   upperImage,
   lowerImage,
   title,
   titleColor,
   backgroundColor,
-  items
+  items,
 }) {
- 
   return (
     <ConfigProvider
       theme={{
         components: {
           Tabs: {
-            inkBarColor: "black",
+            inkBarColor: 'black',
             itemSelectedColor: 'black',
             itemColor: '#666',
-            itemHoverColor: 'black'
+            itemHoverColor: 'black',
           },
         },
       }}
@@ -25,21 +24,17 @@ export default function TabScreen({
       <div
         className="screenshot-screen-container"
         style={{
-          backgroundColor: backgroundColor || "#ffffff",
+          backgroundColor: backgroundColor || '#ffffff',
         }}
       >
         <div className="title-container-screenshot">
-          {upperImage && (
-            <img className="title-image" src={upperImage} alt="Upper"></img>
-          )}
-          <h6 className="screenshot-screen-title" style={{ color: titleColor || "#000000" }}>
+          {upperImage && <img className="title-image" src={upperImage} alt="Upper"></img>}
+          <h6 className="screenshot-screen-title" style={{ color: titleColor || '#000000' }}>
             {title}
           </h6>
-          {lowerImage && (
-            <img className="title-image" src={lowerImage} alt="Lower"></img>
-          )}
+          {lowerImage && <img className="title-image" src={lowerImage} alt="Lower"></img>}
         </div>
-        <div className="highlight-center-f" style={{ width: "80vw" }}>
+        <div className="highlight-center-f" style={{ width: '80vw' }}>
           <Tabs defaultActiveKey="1" items={items} />
         </div>
       </div>

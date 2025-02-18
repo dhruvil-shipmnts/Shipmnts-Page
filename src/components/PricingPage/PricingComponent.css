@@ -41,7 +41,7 @@
   line-height: normal;
 }
 
-@media (max-width: 550px) { 
+@media (max-width: 550px) {
   .pricing-title {
     width: 100%;
   }

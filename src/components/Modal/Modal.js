@@ -1,10 +1,10 @@
-import React from "react";
-import "./Modal.css";
+import React from 'react';
+import './Modal.css';
 const Modal = ({ isOpen, children }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay" >
+    <div className="modal-overlay">
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         {children}
       </div>

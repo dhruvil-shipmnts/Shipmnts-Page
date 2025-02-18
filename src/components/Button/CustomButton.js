@@ -1,6 +1,6 @@
-import React from "react";
-import "../Button/CustomButton.css";
-export default function CustomButton({ style, internalDivStyle, children,link }) {
+import React from 'react';
+import '../Button/CustomButton.css';
+export default function CustomButton({ style, internalDivStyle, children, link }) {
   const handleClick = () => {
     window.location.href = link;
   };

@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 // import PricingCard from "./PricingCard";
-import "../PricingPage/PricingComponent.css";
-import CustomButton from "../Button/CustomButton";
-import Play from "../Button/play.svg";
+import '../PricingPage/PricingComponent.css';
+import CustomButton from '../Button/CustomButton';
+import Play from '../Button/play.svg';
 export default function PricingComponent() {
   // const content = [
   //   {
@@ -27,21 +27,20 @@ export default function PricingComponent() {
   return (
     <div id="pricing" className="pricing-page">
       <div className="pricing-page-demo">
-        <h2 className="pricing-title">
-          Your front and back offices in one logistics software.
-        </h2>
+        <h2 className="pricing-title">Your front and back offices in one logistics software.</h2>
         <CustomButton
-            style={{
-              color: "#FFFFFF",
-              background: "#3A2B2B",
-              padding: "10px 20px"
-            }
-          }
-            link={"https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii"}
-          >
-            <span style={{ fontWeight: 600, display: "inline-block", marginRight: "8px" }}>Get Demo</span>
-            <img src={Play} alt="" />
-          </CustomButton>
+          style={{
+            color: '#FFFFFF',
+            background: '#3A2B2B',
+            padding: '10px 20px',
+          }}
+          link={'https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii'}
+        >
+          <span style={{ fontWeight: 600, display: 'inline-block', marginRight: '8px' }}>
+            Get Demo
+          </span>
+          <img src={Play} alt="" />
+        </CustomButton>
       </div>
       {/* <div className="pricing-card-container">
         <h4

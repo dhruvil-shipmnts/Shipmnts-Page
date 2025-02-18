@@ -1,7 +1,7 @@
-import React from "react";
-import ScreenShotLoader from "./ScreenShotLoader";
-import CarouselWrapper from "../Carousel/CarouselWrapper";
-import "../ScreenShotScreen/ScreenShotScreen.css";
+import React from 'react';
+import ScreenShotLoader from './ScreenShotLoader';
+import CarouselWrapper from '../Carousel/CarouselWrapper';
+import '../ScreenShotScreen/ScreenShotScreen.css';
 export default function ScreenShotScreen({
   backgroundColor,
   titleColor,
@@ -14,19 +14,15 @@ export default function ScreenShotScreen({
     <div
       className="screenshot-screen-container"
       style={{
-        backgroundColor: backgroundColor || "#ffffff",
+        backgroundColor: backgroundColor || '#ffffff',
       }}
     >
       <div className="title-container-screenshot">
-        {upperImage && (
-          <img className="title-image" src={upperImage} alt="Upper"></img>
-        )}
-        <h6 className="screenshot-screen-title" style={{ color: titleColor || "#000000" }}>
+        {upperImage && <img className="title-image" src={upperImage} alt="Upper"></img>}
+        <h6 className="screenshot-screen-title" style={{ color: titleColor || '#000000' }}>
           {title}
         </h6>
-        {lowerImage && (
-          <img className="title-image" src={lowerImage} alt="Lower"></img>
-        )}
+        {lowerImage && <img className="title-image" src={lowerImage} alt="Lower"></img>}
       </div>
       <div className="highlight-center-f">
         <CarouselWrapper>

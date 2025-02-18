@@ -36,11 +36,8 @@
   margin-bottom: 0.6rem;
 }
 
-
 @media (max-width: 550px) {
   .title-image {
     height: 4vh;
   }
 }
-
-

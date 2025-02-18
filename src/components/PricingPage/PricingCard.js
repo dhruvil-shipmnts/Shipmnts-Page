@@ -1,6 +1,6 @@
-import React from "react";
-import "../PricingPage/PricingCard.css";
-import CustomButton from "../Button/CustomButton";
+import React from 'react';
+import '../PricingPage/PricingCard.css';
+import CustomButton from '../Button/CustomButton';
 export default function PricingCard({ planType, price, perYearPrice, text }) {
   return (
     <>
@@ -12,10 +12,11 @@ export default function PricingCard({ planType, price, perYearPrice, text }) {
           <p className="card-subprice"> ₹{perYearPrice}/yr</p>
         </div>
         <div>
-          <p>
-            {text}
-          </p>
-          <CustomButton link="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii" style={{ color: "#7A1600", backgroundColor: '#ffffff' }}>
+          <p>{text}</p>
+          <CustomButton
+            link="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii"
+            style={{ color: '#7A1600', backgroundColor: '#ffffff' }}
+          >
             Schedule Demo
           </CustomButton>
         </div>
