@@ -1,5 +1,6 @@
 import React from 'react';
-import '../CarouselScreen/ColorScreens.css';
+import './styles/ColorScreens.css';
+
 export default function ColorScreens({ backgroundColor, titleColor, title, imageSrc, children }) {
   return (
     <div

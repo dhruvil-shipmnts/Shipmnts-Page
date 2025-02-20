@@ -1,19 +1,23 @@
-.swiper-slide {
-  flex-shrink: 1 !important;
-}
-.swiper-pagination {
-  position: relative !important;
-  padding: 2rem;
-  margin: 0 1rem;
-  text-align: left !important;
+.carousel-child {
+  margin: 0 auto;
 }
 
-.swiper-pagination-bullet {
-  background-color: rgb(255, 255, 255) !important;
-  height: 1rem !important;
-  width: 1rem !important;
-  opacity: 0.5 !important;
+.custom-navigation-button {
+  border-radius: 50%;
+  padding: 5px 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
-.swiper-pagination-bullet-active {
-  opacity: 1 !important;
+
+.swiper-button-disabled {
+  background-color: #1a1a1a0d;
+  cursor: not-allowed;
+}
+
+.swiper-button-next .swiper-button-prev {
+  display: none;
 }

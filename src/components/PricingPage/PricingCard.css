@@ -1,29 +1,73 @@
 .pricing-card {
-  width: 28%;
-  height: 90%;
+  width: 100%;
   display: flex;
   border-radius: 12px;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: rgba(122, 22, 0, 1);
+  background-color: #5e1b0c;
   padding: 1rem;
   color: white;
 }
 
+.pricing-def {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .card-type {
   margin: 0;
-  font-size: 1rem;
+  font-size: 28px;
+}
+
+.card-price {
+  font-size: 80px;
+  margin: 0;
+}
+
+.pricing-card-definition {
+  font-family: Heebo;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 0px;
 }
 
 .card-subprice {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 18px;
 }
 
-.card-price {
-  color: white;
-  font-size: 2.3rem;
-  text-align: left;
-  font-weight: 600;
-  margin: 0;
+.demo-button-pricing {
+  height: 48px;
+  background: #fff;
+  padding: 0px 16px;
+  border-radius: 4rem;
+  border: none;
+}
+
+.demo-button-pricing a {
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 550px) {
+  .pricing-card {
+    padding: 1.5rem;
+  }
+
+  .card-price {
+    font-size: 50px;
+  }
+
+  .card-type {
+    font-size: 24px;
+  }
+
+  .pricing-card-definition {
+    font-size: 24px;
+  }
+
+  .card-subprice {
+    font-size: 16px;
+  }
 }

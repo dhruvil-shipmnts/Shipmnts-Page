@@ -1,28 +1,24 @@
 import React from 'react';
 import CarouselWrapper from '../Carousel/CarouselWrapper';
 import '../Modal/ModalContent.css';
-import Cross from '../Modal/x.svg';
+import { CloseOutlined } from '@ant-design/icons';
 
-export default function ModalContent({ index, titles, onClose, images, paragraphs }) {
+export default function ModalContent({ items, onClose, index }) {
   return (
-    <div className="model-content-scroller">
-      <CarouselWrapper>
-        {(images || []).map((e, currInd) => {
-          const startInd = (currInd + index) % titles.length;
-
+    <div className="model-container">
+      <CarouselWrapper slidesPerView={1} customIconStyle={{ marginTop: 0 }} initialSlide={index}>
+        {(items || []).map((item, currInd) => {
           return (
             <div className="model-content-component">
               <div className="modal-title-div">
-                <h1 className="modal-title">{titles[startInd]}</h1>
-                <button className="close-button" onClick={onClose}>
-                  <img style={{ width: '80%', height: '80%' }} src={Cross} alt="Cross" />
-                </button>
+                <h1 className="modal-title">{item.title}</h1>
+                <CloseOutlined className="close-button" onClick={() => onClose()} />
               </div>
               <div>
-                <p className="modal-para">{paragraphs[startInd]}</p>
+                <p className="modal-para">{item.paragraph}</p>
               </div>
               <div>
-                <img className="model-content-image" src={images[startInd]} alt="Product" />
+                <img className="model-content-image" src={item.image} alt="Product" />
               </div>
             </div>
           );

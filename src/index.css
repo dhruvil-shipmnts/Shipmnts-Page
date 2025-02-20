@@ -4,6 +4,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+:root {
+  --brand-orange-1: #fe6533;
+  --brown: #3a2b2b;
+  --primary-bg-color: #f8f7f2;
 }
 
 h1,
@@ -28,4 +45,15 @@ code {
   html {
     font-size: 70%;
   }
+}
+
+.slider-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem;
+  height: 65vh;
+  border-radius: 1rem;
+  margin: 0 0.1rem;
+  position: relative;
 }

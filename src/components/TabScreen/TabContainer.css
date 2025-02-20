@@ -1,6 +1,30 @@
 .tab-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  width: 70vw;
 }
-/* justify-content: space-between; */
+
+.segment-container {
+  display: flex;
+  gap: 3px;
+  background-color: #e7e7e7;
+  padding: 2px;
+  border-radius: 6px;
+  overflow: scroll;
+}
+
+.segment-container .segment-button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .tab-container {
+    width: 90vw;
+  }
+
+  .segment-container {
+    overflow: scroll;
+    flex-wrap: wrap;
+  }
+}

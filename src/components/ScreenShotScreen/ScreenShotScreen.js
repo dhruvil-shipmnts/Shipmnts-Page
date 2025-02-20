@@ -9,6 +9,7 @@ export default function ScreenShotScreen({
   upperImage,
   lowerImage,
   images,
+  sectionId,
 }) {
   return (
     <div
@@ -16,6 +17,7 @@ export default function ScreenShotScreen({
       style={{
         backgroundColor: backgroundColor || '#ffffff',
       }}
+      id={sectionId}
     >
       <div className="title-container-screenshot">
         {upperImage && <img className="title-image" src={upperImage} alt="Upper"></img>}
@@ -24,7 +26,7 @@ export default function ScreenShotScreen({
         </h6>
         {lowerImage && <img className="title-image" src={lowerImage} alt="Lower"></img>}
       </div>
-      <div className="highlight-center-f">
+      <div className="screenshot-caroused-container">
         <CarouselWrapper>
           {(images || []).map((e, index) => {
             return <ScreenShotLoader key={index} {...e} />;

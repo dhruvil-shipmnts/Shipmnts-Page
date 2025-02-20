@@ -1,43 +1,51 @@
 import React from 'react';
-import { Tabs, ConfigProvider } from 'antd';
-export default function TabScreen({
-  upperImage,
-  lowerImage,
-  title,
-  titleColor,
-  backgroundColor,
-  items,
-}) {
+import { Flex } from 'antd';
+import { Teams, WhiteCircles } from '../../assets';
+import { TAB_ITEMS } from './exports';
+
+export default function TabScreen() {
+  const SegmentLabels = TAB_ITEMS.map((item) => item.label);
+  const [activeTab, setActiveTab] = React.useState(SegmentLabels[0]);
   return (
-    <ConfigProvider
-      theme={{
-        components: {
-          Tabs: {
-            inkBarColor: 'black',
-            itemSelectedColor: 'black',
-            itemColor: '#666',
-            itemHoverColor: 'black',
-          },
-        },
+    <div
+      className="screenshot-screen-container"
+      style={{
+        backgroundColor: '#ffffff',
       }}
+      id="ai_driven_apps"
     >
-      <div
-        className="screenshot-screen-container"
-        style={{
-          backgroundColor: backgroundColor || '#ffffff',
-        }}
-      >
-        <div className="title-container-screenshot">
-          {upperImage && <img className="title-image" src={upperImage} alt="Upper"></img>}
-          <h6 className="screenshot-screen-title" style={{ color: titleColor || '#000000' }}>
-            {title}
-          </h6>
-          {lowerImage && <img className="title-image" src={lowerImage} alt="Lower"></img>}
-        </div>
-        <div className="highlight-center-f" style={{ width: '80vw' }}>
-          <Tabs defaultActiveKey="1" items={items} />
-        </div>
+      <div className="title-container-screenshot">
+        {<img className="title-image" src={Teams} alt="Upper"></img>}
+        <h6 className="screenshot-screen-title" style={{ color: '#000000' }}>
+          {'AI-Driven Apps for More Efficient Teams'}
+        </h6>
+        {<img className="title-image" src={WhiteCircles} alt="Lower"></img>}
       </div>
-    </ConfigProvider>
+      <Flex vertical className="tab-container" align="center" gap={20}>
+        <div className="segment-container">
+          {SegmentLabels.map((label) => {
+            return (
+              <button
+                className="segment-button"
+                onClick={() => {
+                  setActiveTab(label);
+                }}
+                style={
+                  label !== activeTab
+                    ? {
+                        background: 'transparent',
+                      }
+                    : { background: 'white' }
+                }
+                wave={false}
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
+        {TAB_ITEMS.find((item) => item.label === activeTab).content}
+      </Flex>
+    </div>
   );
 }

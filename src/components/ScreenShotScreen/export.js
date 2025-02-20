@@ -1,29 +1,28 @@
-import AIGeneratedReport from '../ScreenShotScreen/image/ControlInsight/AIGeneratedReport.svg';
-import AutoHoldShipment from '../ScreenShotScreen/image/ControlInsight/AutoHoldShipment.svg';
-import Insights from '../ScreenShotScreen/image/ControlInsight/Insights.svg';
-import KnowYourCustomer from '../ScreenShotScreen/image/ControlInsight/KnowYourCustomer.svg';
-import MonitorShipment from '../ScreenShotScreen/image/ControlInsight/MonitorShipment.svg';
-import TrackReceviables from '../ScreenShotScreen/image/ControlInsight/TrackReceviables.svg';
+import {
+  AIGeneratedReport,
+  AutoHoldShipment,
+  Box,
+  Circles,
+  ContextualChat,
+  ContextualEmail,
+  DocumentCollaboration,
+  Eye,
+  Globe,
+  Insights,
+  KnowYourCustomer,
+  Mobile,
+  MobileApp,
+  MonitorShipment,
+  OrderManagement,
+  PublicLink,
+  Scroll,
+  ShipperInsight,
+  TrackReceivables,
+  UniversalSearch,
+} from '../../assets';
 
-import DocumentCollaboration from '../ScreenShotScreen/image/CustomerExperience/DocumentCollaboration.svg';
-import OrderManagement from '../ScreenShotScreen/image/CustomerExperience/OrderManagement.svg';
-import PublicLink from '../ScreenShotScreen/image/CustomerExperience/PublicLink.svg';
-import ShipperInsight from '../ScreenShotScreen/image/CustomerExperience/ShipperInsight.svg';
-
-import ContextualChat from '../ScreenShotScreen/image/ProductivityCollaboration/ContextualChat.svg';
-import ContextualEmail from '../ScreenShotScreen/image/ProductivityCollaboration/ContextualEmail.svg';
-import MobileApp from '../ScreenShotScreen/image/ProductivityCollaboration/MobileApp.svg';
-import UniversalSearch from '../ScreenShotScreen/image/ProductivityCollaboration/UniversalSearch.svg';
-
-import Box from '../ScreenShotScreen/image/UIElement/box.png';
-import Circles from '../ScreenShotScreen/image/UIElement/circles.png';
-import Eye from '../ScreenShotScreen/image/UIElement/eye.png';
-import Globe from '../ScreenShotScreen/image/UIElement/globe.svg';
-import Mobile from '../ScreenShotScreen/image/UIElement/mobile.png';
-import Scroll from '../ScreenShotScreen/image/UIElement/scroll.png';
-
-export const SCREEN_SHOT_CONTENT = [
-  {
+export const SCREEN_SHOT_CONTENT = {
+  customer_centric_features: {
     upperImage: Box,
     lowerImage: Globe,
     title: 'Instant Experiences for your Customers',
@@ -38,8 +37,9 @@ export const SCREEN_SHOT_CONTENT = [
       { imgSrc: DocumentCollaboration, title: 'Document Collaboration' },
       { imgSrc: OrderManagement, title: 'Order Management' },
     ],
+    sectionId: 'digital_platform_section',
   },
-  {
+  actionable_insight: {
     upperImage: Scroll,
     lowerImage: Eye,
     title: 'Controls & insights your  management will love',
@@ -48,8 +48,8 @@ export const SCREEN_SHOT_CONTENT = [
     images: [
       { imgSrc: Insights, title: 'Make Faster Decision with Insights' },
       {
-        imgSrc: TrackReceviables,
-        title: 'Track Receviables and Collections',
+        imgSrc: TrackReceivables,
+        title: 'Track Receivables and Collections',
       },
       {
         imgSrc: AutoHoldShipment,
@@ -65,11 +65,12 @@ export const SCREEN_SHOT_CONTENT = [
       },
       {
         imgSrc: AIGeneratedReport,
-        title: 'Gen AI Generted Report',
+        title: 'Gen AI Generated Report',
       },
     ],
+    sectionId: 'actionable_insight',
   },
-  {
+  productivity_and_multi_party_collaboration: {
     upperImage: Mobile,
     lowerImage: Circles,
     title: 'Productivity & multi party collaboration',
@@ -81,5 +82,6 @@ export const SCREEN_SHOT_CONTENT = [
       { imgSrc: ContextualEmail, title: 'Contextual Email Collaboration' },
       { imgSrc: UniversalSearch, title: 'Web - Universal Search - Table' },
     ],
+    sectionId: 'collaboration',
   },
-];
+};

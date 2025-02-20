@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 import '../TabScreen/TabCard.css';
 import Modal from '../Modal/Modal';
 import ModalContent from '../Modal/ModalContent';
-import Plus from '../TabScreen/plus.svg';
-export default function TabCard({ index, titles, paragraphs, style, images }) {
+import { Plus } from '../../assets';
+import { Flex } from 'antd';
+
+export default function TabCard({ activeItem, style, items, index }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isReadMoreVisible, setIsReadMoreVisible] = useState(false);
   const handleCloseModal = () => {
     setIsOpen(false);
   };
@@ -21,21 +24,21 @@ export default function TabCard({ index, titles, paragraphs, style, images }) {
   return (
     <>
       <Modal isOpen={isOpen}>
-        <ModalContent
-          index={index}
-          onClose={handleCloseModal}
-          titles={titles}
-          paragraphs={paragraphs}
-          images={images}
-        />
+        <ModalContent onClose={handleCloseModal} items={items} index={index} />
       </Modal>
       <div className="tab-card" style={style}>
-        <h2>{titles[index]}</h2>
-        <div className="tab-button-div">
-          <button className="tab-add-button" onClick={handleModalOpen}>
-            <img style={{ width: '80%', height: '80%' }} src={Plus} alt="Plus" />
+        <h2>{activeItem.title}</h2>
+        <Flex justify="end" className="tab-button-div">
+          <button
+            className="tab-add-button"
+            onClick={handleModalOpen}
+            onMouseEnter={() => setIsReadMoreVisible(true)}
+            onMouseLeave={() => setIsReadMoreVisible(false)}
+          >
+            <img className="tab-add-icon" src={Plus} alt="Plus" />
+            {isReadMoreVisible && <span className="tab-add-text">Read More</span>}
           </button>
-        </div>
+        </Flex>
       </div>
     </>
   );

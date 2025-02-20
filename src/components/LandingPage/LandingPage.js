@@ -1,33 +1,25 @@
 import React from 'react';
 import './LandingPage.css';
-import LandingImage from '../LandingPage/landingImage.png';
-import CustomButton from '../Button/CustomButton';
-import Play from '../Button/play.svg';
+import { LandingPageImage, PlayLogo } from '../../assets';
+
 const LandingPage = () => {
   return (
-    <div className="main-content">
+    <div id="landing-page" className="main-content">
       <div className="landing-section">
-        <h1 className="title">TLM Platform for Modern Forwarders</h1>
-        <p className="subtitle">
+        <h1 className="title">
+          TLM Platform <br /> for Modern Forwarders
+        </h1>
+        <span className="subtitle">
           Streamline your day-to-day operations, boost shipment profits, and delight your customers.
-        </p>
-        <CustomButton
-          style={{
-            color: '#ffffff',
-            background: '#ff6f61',
-            padding: '10px 20px',
-          }}
-          link={'https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii'}
-        >
-          <span style={{ fontWeight: 600, display: 'inline-block', marginRight: '8px' }}>
-            Get Demo
-          </span>
-          <img src={Play} alt="" />
-        </CustomButton>
+        </span>
+        <button className="demo-button landing-demo-button" link={''}>
+          <a href="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii">Get Demo</a>
+          <img src={PlayLogo} alt="" />
+        </button>
       </div>
 
       <div className="details-section">
-        <img src={LandingImage} alt="Platform Demo" className="screenshot" />
+        <img src={LandingPageImage} alt="Platform Demo" className="screenshot" />
       </div>
     </div>
   );

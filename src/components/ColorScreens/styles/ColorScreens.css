@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 3.5rem;
+  padding: 6rem 3.5rem;
 }
 
 .colorpage-title {
@@ -27,8 +27,30 @@
   width: 60%;
 }
 
+.colorpage-list {
+  margin: 0 auto;
+}
+
+.colorpage-list li {
+  font-family: Archivo;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+}
+
+.security-text {
+  font-family: Heebo;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+}
+
 @media (max-width: 800px) {
   .colorpage-title {
+    width: 80%;
+  }
+
+  .colorpage-text {
     width: 80%;
   }
 }

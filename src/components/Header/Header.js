@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import Shipmnts from './shipmnts.svg';
-import CustomButton from '../Button/CustomButton';
-import Play from '../Button/play.svg';
+import { HeaderLogo, PlayLogo } from '../../assets';
 
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -28,38 +26,15 @@ export default function Header() {
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="header-container">
-        <img className="logo" src={Shipmnts} alt="Logo" />
+        <img className="logo" src={HeaderLogo} alt="Logo" />
         <div className="actions">
-          <CustomButton
-            style={{
-              color: '#ffffff',
-              background: '#ff6f61',
-              marginRight: '1rem',
-              padding: '6px 14px',
-            }}
-            link={'https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii'}
-          >
-            <span
-              style={{
-                fontWeight: '600',
-                display: 'inline-block',
-                marginRight: '8px',
-              }}
-            >
-              Get Demo
-            </span>
-            <img src={Play} alt="" />
-          </CustomButton>
-          <CustomButton
-            style={{
-              background: '#FFFFFF',
-              color: '#3A2B2B',
-              padding: '6px 16px',
-            }}
-            link="https://booking.shipmnts.com/"
-          >
-            <span style={{ fontWeight: '600' }}>Sign In</span>
-          </CustomButton>
+          <button className="demo-button " id="nav-demo-button" link={''}>
+            <a href="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii">Get Demo</a>
+            <img src={PlayLogo} alt="" />
+          </button>
+          <button className="sign-in-button ">
+            <a href="https://booking.shipmnts.com/">Sign In</a>
+          </button>
         </div>
       </div>
     </header>
