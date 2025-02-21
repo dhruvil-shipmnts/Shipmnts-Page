@@ -7,6 +7,13 @@ import {
   CollaborateHighlightBg,
   GenaiHighlightBg,
   LearnAndGrowBg,
+  MobileChats,
+  MobileCuttingPrice,
+  MobileDigitalPlatform,
+  MobileGenAI,
+  MobileSecurity,
+  MobileSupport,
+  MobileTeam,
   SecurityHighlightBg,
   TeamHighlightBg,
   WebHighlightBg,
@@ -18,6 +25,7 @@ const CarouselScreenWrapper = ({
   title,
   imageSrc,
   sectionHyperLink,
+  mobileImageSrc,
 }) => {
   return (
     <div
@@ -29,7 +37,8 @@ const CarouselScreenWrapper = ({
       <h6 className="page-title" style={{ color: titleColor || '#000000' }}>
         {title}
       </h6>
-      <img className="page-image" src={imageSrc} alt={title} />
+      <img className="page-image desktop-image" src={imageSrc} alt={title} />
+      <img className="page-image mobile-image" src={mobileImageSrc} alt={title} />
 
       <div className="section-navigate-icon btn-round">
         <a href={`#${sectionHyperLink}`}>
@@ -48,6 +57,7 @@ const Highlight = () => {
       backgroundColor: '#FFF2E2',
       titleColor: '#7A1600',
       sectionHyperLink: 'digital_platform_section',
+      mobileImageSrc: MobileDigitalPlatform,
     },
     {
       title: 'AI first apps for more efficient teams',
@@ -55,6 +65,7 @@ const Highlight = () => {
       backgroundColor: '#FEFFC7',
       titleColor: '#7A1600',
       sectionHyperLink: 'ai_driven_apps',
+      mobileImageSrc: MobileTeam,
     },
     {
       title: 'Actionable Insights for Faster Decisions',
@@ -62,6 +73,7 @@ const Highlight = () => {
       backgroundColor: '#FAE8FF',
       titleColor: '#60007B',
       sectionHyperLink: 'actionable_insight',
+      mobileImageSrc: MobileGenAI,
     },
     {
       title: 'Productivity & Multi-Party Collaboration toolkit',
@@ -69,6 +81,7 @@ const Highlight = () => {
       backgroundColor: '#FFF2E2',
       titleColor: '#7A1600',
       sectionHyperLink: 'collaboration',
+      mobileImageSrc: MobileChats,
     },
     {
       title: 'Personalized and Proactive Support you can count on',
@@ -76,6 +89,7 @@ const Highlight = () => {
       backgroundColor: '#FEFFC7',
       titleColor: '#7A1600',
       sectionHyperLink: 'support',
+      mobileImageSrc: MobileSupport,
     },
     {
       title: 'With Great Power comes Great Security',
@@ -83,6 +97,7 @@ const Highlight = () => {
       backgroundColor: '#FAE8FF',
       titleColor: '#60007B',
       sectionHyperLink: 'security',
+      mobileImageSrc: MobileSecurity,
     },
     {
       title: 'Cutting-edge software at Forwarder Friendly Prices',
@@ -90,6 +105,7 @@ const Highlight = () => {
       backgroundColor: '#FFF2E2',
       titleColor: '#7A1600',
       sectionHyperLink: 'pricing',
+      mobileImageSrc: MobileCuttingPrice,
     },
   ];
   return (

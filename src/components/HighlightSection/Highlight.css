@@ -53,15 +53,20 @@
   overflow: hidden;
 }
 
+.page-container .mobile-image {
+  display: none;
+}
+
 @media (max-width: 550px) {
   .page-container {
-    height: 30vh;
+    height: 60vh;
     width: 85vw;
     overflow: hidden !important;
     margin: 0 auto;
   }
   .page-title {
     width: 90%;
+    font-size: 28px;
   }
   /* .page-image {
     width: 150%; 
@@ -70,5 +75,18 @@
   } */
   .highlight-container {
     padding: 4rem 0;
+  }
+
+  .page-container .mobile-image {
+    display: block;
+  }
+
+  .page-container .desktop-image {
+    display: none;
+  }
+
+  .page-container .btn-round {
+    height: 42px !important;
+    width: 42px !important;
   }
 }

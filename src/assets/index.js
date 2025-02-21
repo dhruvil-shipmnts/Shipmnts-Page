@@ -84,3 +84,25 @@ export { default as ArrowForward } from './utilities/arrow_forward.svg';
 export { default as TrackingPadIcon } from './utilities/trackpad_input.svg';
 export { default as BIDLandscapeIcon } from './utilities/bid_landscape.svg';
 export { default as AutoStoriesIcon } from './utilities/auto_stories.svg';
+
+export { default as TransportIcon } from './product/Icons/Transport.svg';
+export { default as WarehouseIcon } from './product/Icons/Warehouse.svg';
+export { default as InsightsIcon } from './product/Icons/Insights.svg';
+export { default as SalesIcon } from './product/Icons/Sales.svg';
+export { default as CustomsIcon } from './product/Icons/Customs.svg';
+export { default as PricingIcon } from './product/Icons/Pricing.svg';
+export { default as FinanceIcon } from './product/Icons/Finance.svg';
+export { default as ForwardingIcon } from './product/Icons/Forwarding.svg';
+
+export { default as ServicesBg } from './utilities/SecuritySectionBg.svg';
+export { default as Heart } from './utilities/Heart.svg';
+
+export { default as FooterBg } from './utilities/footer_bg.svg';
+
+export { default as MobileSecurity } from './utilities/Highlight/Mobile/security.svg';
+export { default as MobileTeam } from './utilities/Highlight/Mobile/team.svg';
+export { default as MobileCuttingPrice } from './utilities/Highlight/Mobile/cutting_price.svg';
+export { default as MobileSupport } from './utilities/Highlight/Mobile/support.svg';
+export { default as MobileChats } from './utilities/Highlight/Mobile/chats.svg';
+export { default as MobileGenAI } from './utilities/Highlight/Mobile/genai.svg';
+export { default as MobileDigitalPlatform } from './utilities/Highlight/Mobile/digital_platform.svg';

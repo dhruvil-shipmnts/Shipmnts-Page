@@ -14,6 +14,7 @@ import { SCREEN_SHOT_CONTENT } from './components/ScreenShotScreen/export';
 import TabScreen from './components/TabScreen/TabScreen';
 import { ConfigProvider } from 'antd';
 import ImageViewerModal from './components/Common/ImageViewer';
+import Services from './components/Services/Services';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
 
         <Header />
         <LandingPage />
+        <Services />
         <Highlight />
         {/* <Arcade /> */}
         <ScreenShotScreen {...SCREEN_SHOT_CONTENT['customer_centric_features']} />
