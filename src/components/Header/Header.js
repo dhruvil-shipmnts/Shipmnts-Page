@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import { HeaderLogo, PlayLogo } from '../../assets';
+import { HeaderLogo } from '../../assets';
+import DemoButton from '../Common/DemoButton';
 
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -28,11 +29,10 @@ export default function Header() {
       <div className="header-container">
         <img className="logo" src={HeaderLogo} alt="Logo" />
         <div className="actions">
-          <button className="demo-button " id="nav-demo-button" link={''}>
-            <a href="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii">Get Demo</a>
-            <img src={PlayLogo} alt="" />
-          </button>
-          <button className="sign-in-button ">
+          <span id="nav-demo-button">
+            <DemoButton />
+          </span>
+          <button className="btn sign-in-button">
             <a href="https://booking.shipmnts.com/">Sign In</a>
           </button>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../PricingPage/PricingCard.css';
+import DemoButton from '../Common/DemoButton';
 
 export default function PricingCard({ planType, price, perYearPrice, text }) {
   return (
@@ -13,9 +14,7 @@ export default function PricingCard({ planType, price, perYearPrice, text }) {
         </div>
         <div className="pricing-card-definition">
           <p>{text}</p>
-          <button className="demo-button-pricing">
-            <a href="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii">Demo</a>
-          </button>
+          <DemoButton variant="brown-white" showPlayLogo={false} />
         </div>
       </div>
     </>

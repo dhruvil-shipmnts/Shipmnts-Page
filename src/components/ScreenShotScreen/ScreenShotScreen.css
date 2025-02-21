@@ -31,18 +31,11 @@
   height: 10%;
   width: 70%;
   margin-top: 0;
-  font-size: 3rem;
-  text-align: center;
-  font-weight: 500;
   margin-bottom: 0.6rem;
 }
 
 @media (max-width: 550px) {
   .title-image {
     height: 8vh;
-  }
-
-  .screenshot-screen-container {
-    padding: 2rem 1rem;
   }
 }

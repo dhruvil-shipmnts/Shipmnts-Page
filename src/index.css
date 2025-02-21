@@ -57,3 +57,47 @@ code {
   margin: 0 0.1rem;
   position: relative;
 }
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 4rem;
+  border: none;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 40px;
+}
+
+.btn-large {
+  height: 56px;
+}
+
+.btn-round {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 550px) {
+  .btn-round {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .btn-round img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

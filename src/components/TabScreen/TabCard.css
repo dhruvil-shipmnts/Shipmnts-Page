@@ -5,33 +5,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 1.2rem;
+  position: relative; /* Ensure relative positioning for absolute children */
 }
 
 .tab-card h2 {
-  font-weight: 500;
-  font-size: 2.1rem;
+  font-weight: 300;
+  font-size: 28px;
   text-align: left;
   margin: 0;
 }
 
+.tab-button-div {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
 .tab-add-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
   position: relative;
-  transition:
-    width 0.3s ease,
-    border-radius 0.3s ease;
   padding: 0;
   color: black;
   background-color: white;
-  text-align: c;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .tab-add-icon {
@@ -43,7 +38,6 @@
 .tab-add-text {
   white-space: nowrap;
   opacity: 0;
-  transform: translateX(10px);
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
@@ -51,30 +45,30 @@
   margin-left: 8px;
 }
 
-/* On hover, expand the button */
-.tab-add-button:hover {
+/* Show Read More button on card hover */
+.tab-card:hover .tab-add-button {
   width: 130px;
-  border-radius: 28px; /* Rounded corners instead of 10% */
+  border-radius: 28px;
   justify-content: space-evenly;
   padding: 0 12px;
 }
-/* Keep the plus icon visible */
-.tab-add-button:hover .tab-add-icon {
-  transform: scale(1);
-}
 
-/* Show the text smoothly */
-.tab-add-button:hover .tab-add-text {
+/* Show text on hover */
+.tab-card:hover .tab-add-text {
   opacity: 1;
   transform: translateX(0);
 }
 
 @media (max-width: 560px) {
   .tab-card {
-    width: 90%;
-    flex-direction: row;
-    padding: 2rem 3rem;
-    height: 8vh;
-    align-items: center;
+    height: 10vh;
+  }
+
+  .tab-card h2 {
+    font-size: 24px;
+  }
+
+  .tab-add-text {
+    font-size: 12px;
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './Highlight.css';
 import CarouselWrapper from '../Carousel/CarouselWrapper';
 import {
+  ArrowForward,
   BalanceHighLightBg,
   CollaborateHighlightBg,
   GenaiHighlightBg,
@@ -10,7 +11,6 @@ import {
   TeamHighlightBg,
   WebHighlightBg,
 } from '../../assets';
-import { ArrowRightOutlined } from '@ant-design/icons';
 
 const CarouselScreenWrapper = ({
   backgroundColor,
@@ -31,9 +31,9 @@ const CarouselScreenWrapper = ({
       </h6>
       <img className="page-image" src={imageSrc} alt={title} />
 
-      <div className="section-navigate-icon">
+      <div className="section-navigate-icon btn-round">
         <a href={`#${sectionHyperLink}`}>
-          <ArrowRightOutlined />
+          <img src={ArrowForward} alt="->" />
         </a>
       </div>
     </div>

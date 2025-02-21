@@ -1,6 +1,7 @@
 import React from 'react';
+import { LandingPageImage } from '../../assets';
+import DemoButton from '../Common/DemoButton';
 import './LandingPage.css';
-import { LandingPageImage, PlayLogo } from '../../assets';
 
 const LandingPage = () => {
   return (
@@ -12,10 +13,7 @@ const LandingPage = () => {
         <span className="subtitle">
           Streamline your day-to-day operations, boost shipment profits, and delight your customers.
         </span>
-        <button className="demo-button landing-demo-button" link={''}>
-          <a href="https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii">Get Demo</a>
-          <img src={PlayLogo} alt="" />
-        </button>
+        <DemoButton size="large" />
       </div>
 
       <div className="details-section">

@@ -26,16 +26,16 @@ export default function TabCard({ activeItem, style, items, index }) {
       <Modal isOpen={isOpen}>
         <ModalContent onClose={handleCloseModal} items={items} index={index} />
       </Modal>
-      <div className="tab-card" style={style}>
+      <div
+        className="tab-card"
+        style={style}
+        onMouseEnter={() => setIsReadMoreVisible(true)}
+        onMouseLeave={() => setIsReadMoreVisible(false)}
+      >
         <h2>{activeItem.title}</h2>
         <Flex justify="end" className="tab-button-div">
-          <button
-            className="tab-add-button"
-            onClick={handleModalOpen}
-            onMouseEnter={() => setIsReadMoreVisible(true)}
-            onMouseLeave={() => setIsReadMoreVisible(false)}
-          >
-            <img className="tab-add-icon" src={Plus} alt="Plus" />
+          <button className="tab-add-button btn-round" onClick={handleModalOpen}>
+            <img className="tab-add-icon " src={Plus} alt="Plus" />
             {isReadMoreVisible && <span className="tab-add-text">Read More</span>}
           </button>
         </Flex>

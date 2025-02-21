@@ -1,13 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './CarouselWrapper.css';
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
 import { Flex } from 'antd';
+import { LeftIcon, RightIcon } from '../../assets';
 
 export default function CarouselWrapper({
   children,
@@ -39,7 +39,7 @@ export default function CarouselWrapper({
         initialSlide={initialSlide ?? 0}
         breakpoints={{
           0: { slidesPerView: slidesPerView ?? 1 },
-          768: { slidesPerView: slidesPerView ?? 2 },
+          768: { slidesPerView: slidesPerView ?? 1.5 },
         }}
       >
         {(children || []).map((e, index) => (
@@ -47,11 +47,11 @@ export default function CarouselWrapper({
         ))}
       </Swiper>
       <Flex justify="center" align="center" gap={10} style={customIconStyle ?? { marginTop: 20 }}>
-        <button ref={prevRef} className="custom-navigation-button">
-          <LeftOutlined />
+        <button ref={prevRef} className="custom-navigation-button btn-round">
+          <img src={LeftIcon} alt="<" />
         </button>
-        <button ref={nextRef} className="custom-navigation-button">
-          <RightOutlined />
+        <button ref={nextRef} className="custom-navigation-button btn-round">
+          <img src={RightIcon} alt=">" />
         </button>
       </Flex>
     </div>

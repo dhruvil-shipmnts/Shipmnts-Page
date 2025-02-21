@@ -41,53 +41,33 @@
 .actions {
   display: flex;
   align-items: center;
+  gap: 8px;
   padding-right: 4.2rem;
 }
 
-.demo-button {
-  background-color: var(--brand-orange-1);
-  color: #fff;
-  height: 40px;
-  border-radius: 4rem;
-  border: none;
-  padding: 0px 16px;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.demo-button a {
-  font-family: Inter;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-decoration: none;
-  color: #fff;
-}
-
 .sign-in-button {
-  height: 40px;
-  background: #fff;
-  padding: 0px 16px;
-  border-radius: 4rem;
-  border: none;
+  background-color: white;
 }
 
 .sign-in-button a {
-  font-family: Inter;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-decoration: none;
   color: var(--brown);
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {
   #nav-demo-button {
     display: none !important;
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .logo {
+    padding-left: 20px;
+  }
+
+  .actions {
+    padding-right: 20px;
   }
 }

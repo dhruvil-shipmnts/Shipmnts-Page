@@ -21,7 +21,10 @@ export default function ScreenShotScreen({
     >
       <div className="title-container-screenshot">
         {upperImage && <img className="title-image" src={upperImage} alt="Upper"></img>}
-        <h6 className="screenshot-screen-title" style={{ color: titleColor || '#000000' }}>
+        <h6
+          className="screenshot-screen-title section-title"
+          style={{ color: titleColor || '#000000' }}
+        >
           {title}
         </h6>
         {lowerImage && <img className="title-image" src={lowerImage} alt="Lower"></img>}

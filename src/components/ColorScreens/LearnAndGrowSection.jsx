@@ -1,7 +1,11 @@
 import React from 'react';
 import ColorScreens from './ColorScreens';
-import { LearnAndGrowBg } from '../../assets/index';
-import { Flex } from 'antd';
+import {
+  AutoStoriesIcon,
+  BIDLandscapeIcon,
+  LearnAndGrowBg,
+  TrackingPadIcon,
+} from '../../assets/index';
 
 const LearnAndGrowSection = () => {
   const content = {
@@ -11,29 +15,37 @@ const LearnAndGrowSection = () => {
     titleColor: '#7A1600',
   };
 
-  // {
-  //   title: 'With Great Power comes Great Security',
-  //   imageSrc: Security,
-  //   backgroundColor: '#FAE8FF',
-  //   titleColor: '#60007B',
-  // },
-  // {
-  //   title: 'Cutting-edge software at Forwarder Friendly Prices',
-  //   imageSrc: Balance,
-  //   backgroundColor: '#FFF2E2',
-  //   titleColor: '#7A1600',
-  // },
+  const cardData = [
+    {
+      icon: BIDLandscapeIcon,
+      text: 'Priority Support & Business Reviews',
+    },
+    {
+      icon: TrackingPadIcon,
+      text: 'Goal-Driven Account Management',
+    },
+    {
+      icon: AutoStoriesIcon,
+      text: 'Configurable & User-Friendly System',
+    },
+  ];
 
   return (
     <div id={'support'}>
       <ColorScreens {...content}>
-        <Flex justify="center" align="center">
-          <ul className="colorpage-list">
-            <li>Super easy to use, learn, customize</li>
-            <li>Priority Support. Quarterly Business Review included in Pro & Enterprise plans.</li>
-            <li>Flexible Learning Solutions</li>
-          </ul>
-        </Flex>
+        <div className="support-card-container">
+          {cardData.map((card, index) => (
+            <div className="support-card" key={index}>
+              <div
+                className="support-round-icon-container"
+                style={{ background: content.backgroundColor }}
+              >
+                <img src={card.icon} alt={card.text} />
+              </div>
+              <p>{card.text}</p>
+            </div>
+          ))}
+        </div>
       </ColorScreens>
     </div>
   );

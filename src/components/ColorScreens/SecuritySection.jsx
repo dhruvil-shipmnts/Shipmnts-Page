@@ -20,10 +20,10 @@ const SecuritySection = () => {
     <div id={'security'}>
       <ColorScreens {...content}>
         <p className="security-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore voluptatibus molestias
-          placeat, mollitia suscipit unde quisquam omnis voluptate exercitationem illum nemo fugiat
-          reprehenderit harum blanditiis aperiam tempore. Eveniet libero minima porro nobis!
-          Reprehenderit, atque pariatur.
+          A highly compatible system with <strong>24/7 availability</strong>, global disaster
+          recovery, <strong>automated hourly backups</strong>, data maintenance, MFA, and 256-bit
+          encryption for both transit and <strong>storage</strong>, ensuring seamless business
+          continuity.
         </p>
       </ColorScreens>
     </div>

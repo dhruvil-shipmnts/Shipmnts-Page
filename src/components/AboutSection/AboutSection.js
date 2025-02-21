@@ -1,23 +1,13 @@
 import React from 'react';
-import { Facebook, Instagram, LinkedIn } from '../../assets';
+import { LinkedIn } from '../../assets';
 import '../AboutSection/AboutSection.css';
 
 export default function AboutSection() {
   const socials = [
     {
-      label: 'Facebook',
-      icon: Facebook,
-      link: 'https://www.facebook.com/logistixian',
-    },
-    {
       label: 'LinkedIn',
       icon: LinkedIn,
       link: 'https://www.linkedin.com/company/logistixian',
-    },
-    {
-      label: 'Instagram',
-      icon: Instagram,
-      link: 'https://www.instagram.com/logistixian',
     },
   ];
   return (

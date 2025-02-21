@@ -3,6 +3,7 @@ export { default as SecuritySectionBg } from './utilities/SecuritySectionBg.svg'
 export { default as PricingAdBg } from './utilities/PricingAdBg.svg';
 export { default as HeaderLogo } from './Header Logo.svg';
 export { default as PlayLogo } from './utilities/play.svg';
+export { default as PlayLogoBlack } from './utilities/PlayBlack.svg';
 export { default as LandingPageImage } from './LandingPage.png';
 
 export { default as PDP } from './product/PDP.svg';
@@ -75,3 +76,11 @@ export { default as Teams } from './utilities/Teams.svg';
 export { default as Instagram } from './utilities/Instagram.svg';
 export { default as LinkedIn } from './utilities/LinkedIn.svg';
 export { default as Facebook } from './utilities/Facebook.svg';
+
+export { default as LeftIcon } from './utilities/chevron_left.svg';
+export { default as RightIcon } from './utilities/chevron_right.svg';
+export { default as ArrowForward } from './utilities/arrow_forward.svg';
+
+export { default as TrackingPadIcon } from './utilities/trackpad_input.svg';
+export { default as BIDLandscapeIcon } from './utilities/bid_landscape.svg';
+export { default as AutoStoriesIcon } from './utilities/auto_stories.svg';

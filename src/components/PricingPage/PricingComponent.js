@@ -1,55 +1,49 @@
 import React from 'react';
 import '../PricingPage/PricingComponent.css';
-import CustomButton from '../Button/CustomButton';
-import { PlayCircleFilled } from '@ant-design/icons';
-import { Col, Switch } from 'antd';
-import PricingCard from './PricingCard';
+// import { Col, Switch } from 'antd';
+// import PricingCard from './PricingCard';
+import DemoButton from '../Common/DemoButton';
+import { PlayLogoBlack } from '../../assets';
 
-const content = [
-  {
-    planType: 'Essential',
-    price: '2000',
-    perYearPrice: '24,000',
-    text: 'The customer support plan for individuals, startups, and small businesses.',
-  },
-  {
-    planType: 'Business',
-    price: '4000',
-    perYearPrice: '25,200',
-    text: 'Powerful automation tools and AI features for growing support teams',
-  },
-  {
-    planType: 'Enterprise',
-    price: '3200',
-    perYearPrice: '38,400',
-    text: 'Collaboration, security and reporting tools for large support teams.',
-  },
-];
+// const content = [
+//   {
+//     planType: 'Essential',
+//     price: '2000',
+//     perYearPrice: '24,000',
+//     text: 'The customer support plan for individuals, startups, and small businesses.',
+//   },
+//   {
+//     planType: 'Business',
+//     price: '4000',
+//     perYearPrice: '25,200',
+//     text: 'Powerful automation tools and AI features for growing support teams',
+//   },
+//   {
+//     planType: 'Enterprise',
+//     price: '3200',
+//     perYearPrice: '38,400',
+//     text: 'Collaboration, security and reporting tools for large support teams.',
+//   },
+// ];
 
 export const PricingComponent = () => {
-  const [isAnnually, setIsAnnually] = React.useState(true);
+  // const [isAnnually, setIsAnnually] = React.useState(true);
 
-  const getStyleColor = (isActive) => {
-    return isActive ? { color: '#303030' } : { color: '#303030', opacity: 0.5 };
-  };
+  // const getStyleColor = (isActive) => {
+  //   return isActive ? { color: '#303030' } : { color: '#303030', opacity: 0.5 };
+  // };
 
   return (
     <div id="pricing" className="pricing-page">
       <div className="pricing-page-demo">
-        <h2 className="pricing-title">Your front and back offices in one logistics software.</h2>
-        <CustomButton
-          style={{
-            padding: '10px 20px',
-          }}
-          link={'https://share.hsforms.com/1bgqKhlUxTRSRt1HEWX-Jsg1yzii'}
-        >
-          <span style={{ fontWeight: 600, display: 'inline-block', marginRight: '8px' }}>
-            Get Demo
-          </span>
-          <PlayCircleFilled />
-        </CustomButton>
+        <h2 className="pricing-title ">Your front and back offices in one logistics software.</h2>
+        <DemoButton
+          size="large"
+          variant={'black-white'}
+          icon={<img src={PlayLogoBlack} alt="" />}
+        />
       </div>
-      <div className="pricing-card-container">
+      {/* <div className="pricing-card-container">
         <p
           style={{
             color: '#7A1600',
@@ -77,7 +71,7 @@ export const PricingComponent = () => {
             <PricingCard {...content[2]} />
           </Col>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

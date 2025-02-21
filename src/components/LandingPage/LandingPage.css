@@ -8,7 +8,7 @@
 }
 
 .landing-section {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,15 +49,9 @@
 }
 
 .landing-demo-button {
-  height: 56px !important;
-  padding: 0px 20px;
 }
 
 .landing-demo-button a {
-  font-family: Inter;
-  font-weight: 600;
-  font-size: 19.6px;
-  letter-spacing: 0%;
 }
 
 @media (max-width: 800px) {
@@ -78,13 +72,6 @@
     border-radius: 8px;
   }
 
-  .landing-demo-button {
-    height: 40px !important;
-  }
-
-  .landing-demo-button a {
-    font-size: 16px !important;
-  }
   #landing-page {
     padding-top: 16rem;
   }
