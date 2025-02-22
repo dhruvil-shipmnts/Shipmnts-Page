@@ -12,7 +12,7 @@ export default function ScreenShotScreen({
   sectionId,
 }) {
   return (
-    <div
+    <section
       className="screenshot-screen-container"
       style={{
         backgroundColor: backgroundColor || '#ffffff',
@@ -36,6 +36,6 @@ export default function ScreenShotScreen({
           })}
         </CarouselWrapper>
       </div>
-    </div>
+    </section>
   );
 }

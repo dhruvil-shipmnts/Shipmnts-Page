@@ -1,23 +1,19 @@
 import React from 'react';
 import TabCard from './TabCard';
 import '../TabScreen/TabContainer.css';
-import { Col, Row } from 'antd';
 
-export default function TabContainer({ items }) {
+export default function TabContainer({ items, colorHash }) {
   return (
-    <Row className="tab-content-container" gutter={[20, 20, 20, 20]}>
-      {(items || []).map((item, index) => {
-        return (
-          <Col lg={8} sm={24} key={index} style={{ width: '100%' }}>
-            <TabCard
-              index={index}
-              activeItem={item}
-              items={items}
-              style={{ backgroundColor: index % 2 === 0 ? '#FFFFE3' : '#FEFFC7' }}
-            />
-          </Col>
-        );
-      })}
-    </Row>
+    <div className="tab-content-container">
+      {(items || []).map((item, index) => (
+        <div
+          key={index}
+          className="card"
+          style={{ backgroundColor: index % 2 === 0 ? colorHash.even : colorHash.odd }}
+        >
+          <TabCard index={index} activeItem={item} items={items} />
+        </div>
+      ))}
+    </div>
   );
 }

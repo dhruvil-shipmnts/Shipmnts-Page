@@ -35,14 +35,14 @@ export const PricingComponent = () => {
 
   return (
     <div id="pricing" className="pricing-page">
-      <div className="pricing-page-demo">
+      <section className="pricing-page-demo">
         <h2 className="pricing-title ">Your front and back offices in one logistics software.</h2>
         <DemoButton
           size="large"
           variant={'black-white'}
           icon={<img src={PlayLogoBlack} alt="" />}
         />
-      </div>
+      </section>
       {/* <div className="pricing-card-container">
         <p
           style={{
@@ -55,11 +55,11 @@ export const PricingComponent = () => {
         >
           Our Pricing
         </p>
-        <section className="pricing-switch">
+        <div className="pricing-switch">
           <span style={getStyleColor(!isAnnually)}>Bill Monthly</span>{' '}
           <Switch value={isAnnually} onChange={(checked) => setIsAnnually(checked)} />{' '}
           <span style={getStyleColor(isAnnually)}>Bill Annually</span>
-        </section>
+        </div>
         <div className="pricing-cards-container" gap={40} justify="center">
           <Col lg={6} md={6} sm={24}>
             <PricingCard {...content[0]} />

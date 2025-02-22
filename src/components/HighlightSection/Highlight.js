@@ -29,7 +29,7 @@ const CarouselScreenWrapper = ({
 }) => {
   return (
     <div
-      className="page-container"
+      className="page-container card"
       style={{
         backgroundColor: backgroundColor || '#ffffff',
       }}
@@ -109,7 +109,7 @@ const Highlight = () => {
     },
   ];
   return (
-    <div id="products" className="highlight-container">
+    <section id="products" className="highlight-container">
       <div className="highlight-center">
         <div className="section-title-container">
           <h1 className="section-title">Highlights</h1>
@@ -126,7 +126,7 @@ const Highlight = () => {
           </CarouselWrapper>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

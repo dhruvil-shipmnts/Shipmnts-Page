@@ -1,15 +1,15 @@
 .tab-card {
   height: 15vh;
-  padding: 1rem;
-  border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative; /* Ensure relative positioning for absolute children */
+  overflow: hidden;
+  padding: 1rem 1.75rem;
 }
 
 .tab-card h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 28px;
   text-align: left;
   margin: 0;
@@ -41,8 +41,7 @@
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
-  font-size: 14px;
-  margin-left: 8px;
+  font-size: 16px;
   display: none;
 }
 
@@ -72,5 +71,12 @@
 
   .tab-add-text {
     font-size: 12px;
+  }
+
+  .tab-card:hover .tab-add-button {
+    width: 120px;
+    border-radius: 28px;
+    justify-content: space-evenly;
+    padding: 0 6px;
   }
 }

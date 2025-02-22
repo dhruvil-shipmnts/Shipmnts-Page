@@ -1,6 +1,7 @@
 .services-section {
   position: relative;
   background-color: #fe6533; /* Background color neeche */
+  height: 100vh;
 }
 
 .services-section::before {
@@ -24,9 +25,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Items ko horizontally center align karega */
-  gap: 5rem;
+  gap: 3rem;
   row-gap: 1.5rem;
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
   width: 60%;
   z-index: 1001;
 }
@@ -53,7 +54,6 @@
 .loved-section {
   color: #5e1b0c;
   background: #ffffff;
-  border-radius: 2rem;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -114,6 +114,6 @@
   }
 
   .service-card {
-    width: calc(100% / 3 - 5rem); /* 3 columns with spacing */
+    width: calc(100% / 3 - 3rem); /* 3 columns with spacing */
   }
 }

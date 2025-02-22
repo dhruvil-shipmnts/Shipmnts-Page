@@ -1,5 +1,9 @@
 .tab-container {
   width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 .segment-container {
@@ -7,18 +11,23 @@
   gap: 3px;
   background-color: #f5f5f5;
   padding: 2px;
-  border-radius: 8px;
-  overflow: scroll;
+  border-radius: 22px;
   white-space: nowrap;
 }
 
 .segment-container .segment-button {
   border: none;
   padding: 5px 10px;
-  border-radius: 6px;
+  border-radius: 24px;
   cursor: pointer;
   height: 54px;
   font-size: 18px;
+}
+
+.tab-content-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 @media (max-width: 550px) {
@@ -33,5 +42,10 @@
 
   .segment-container .segment-button {
     font-size: 14px;
+  }
+
+  .tab-content-container {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 8px;
   }
 }

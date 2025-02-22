@@ -69,7 +69,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-      <div className="loved-section">
+      <div className="loved-section card">
         <img src={Heart} alt="Heart" />
         <p>Loved by 6000+ users across the globe</p>
       </div>

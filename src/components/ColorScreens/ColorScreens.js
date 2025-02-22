@@ -3,7 +3,7 @@ import './styles/ColorScreens.css';
 
 export default function ColorScreens({ backgroundColor, titleColor, title, imageSrc, children }) {
   return (
-    <div
+    <section
       className="colorpage-container"
       style={{
         backgroundColor: backgroundColor || '#ffffff',
@@ -14,6 +14,6 @@ export default function ColorScreens({ backgroundColor, titleColor, title, image
       </h6>
       <img className="colorpage-image" src={imageSrc} alt={title} />
       <div>{children}</div>
-    </div>
+    </section>
   );
 }

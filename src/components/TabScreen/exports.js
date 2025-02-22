@@ -261,31 +261,79 @@ export const TAB_ITEMS = [
   {
     key: '1',
     label: 'Sales & Pricing',
-    content: <TabContainer items={SALES_AND_PRICING} />,
+    content: (
+      <TabContainer
+        items={SALES_AND_PRICING}
+        colorHash={{
+          even: '#FFFFE3',
+          odd: '#FEFFC7',
+        }}
+      />
+    ),
   },
   {
     key: '2',
     label: 'CS & Operations',
-    content: <TabContainer items={CS_OPERATIONS} />,
+    content: (
+      <TabContainer
+        items={CS_OPERATIONS}
+        colorHash={{
+          even: '#FBDFBC',
+          odd: '#FFF2E2',
+        }}
+      />
+    ),
   },
   {
     key: '3',
     label: 'Documentation',
-    content: <TabContainer items={DOCUMENTATION} />,
+    content: (
+      <TabContainer
+        items={DOCUMENTATION}
+        colorHash={{
+          even: '#FFFFE3',
+          odd: '#FEFFC7',
+        }}
+      />
+    ),
   },
   {
     key: '4',
     label: 'Accounts Receivable',
-    content: <TabContainer items={ACCOUNT_RECEIVABLE} />,
+    content: (
+      <TabContainer
+        items={ACCOUNT_RECEIVABLE}
+        colorHash={{
+          even: '#FBDFBC',
+          odd: '#FFF2E2',
+        }}
+      />
+    ),
   },
   {
     key: '5',
     label: 'Accounts Payable',
-    content: <TabContainer items={ACCOUNT_PAYABLE} />,
+    content: (
+      <TabContainer
+        items={ACCOUNT_PAYABLE}
+        colorHash={{
+          even: '#FFFFE3',
+          odd: '#FEFFC7',
+        }}
+      />
+    ),
   },
   {
     key: '6',
     label: 'Taxation and Controls',
-    content: <TabContainer items={TAXATION_CONTROL} />,
+    content: (
+      <TabContainer
+        items={TAXATION_CONTROL}
+        colorHash={{
+          even: '#FBDFBC',
+          odd: '#FFF2E2',
+        }}
+      />
+    ),
   },
 ];

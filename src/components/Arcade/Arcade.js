@@ -3,7 +3,7 @@ import '../Arcade/Arcade.css';
 
 export default function Arcade() {
   return (
-    <div className="arcade">
+    <section className="arcade">
       <div className="section-title-container">
         <h1 className="section-title">Take a Closer Look</h1>
       </div>
@@ -15,6 +15,6 @@ export default function Arcade() {
           title="Arcade Experience"
         ></iframe>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Flex } from 'antd';
 import { Teams, WhiteCircles } from '../../assets';
 import { TAB_ITEMS } from './exports';
 
@@ -7,7 +6,7 @@ export default function TabScreen() {
   const SegmentLabels = TAB_ITEMS.map((item) => item.label);
   const [activeTab, setActiveTab] = React.useState(SegmentLabels[0]);
   return (
-    <div
+    <section
       className="screenshot-screen-container"
       style={{
         backgroundColor: '#ffffff',
@@ -21,7 +20,7 @@ export default function TabScreen() {
         </h6>
         {<img className="title-image" src={WhiteCircles} alt="Lower"></img>}
       </div>
-      <Flex vertical className="tab-container" align="center" gap={20}>
+      <div className="tab-container">
         <div className="segment-container">
           {SegmentLabels.map((label) => {
             return (
@@ -45,7 +44,7 @@ export default function TabScreen() {
           })}
         </div>
         {TAB_ITEMS.find((item) => item.label === activeTab).content}
-      </Flex>
-    </div>
+      </div>
+    </section>
   );
 }

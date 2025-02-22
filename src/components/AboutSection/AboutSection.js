@@ -16,21 +16,25 @@ export default function AboutSection() {
       <div id="about" className="about-section">
         <div className="about-content">
           <img src={HeaderLogo} alt="SHIPMNTS" />
-          <p>
+          <p className="body-text">
             We are a tech platform for Freight Forwarders, Importers, Exporters, and CHAs. Shipmnts
             streamlines Sales, Pricing, Documentation, Cargo Operations, Billing, and Compliance -
             all in one place.
           </p>
-          <p>
+          <p className="body-text">
             Each tool is powerful alone, but together, they transform how logistics businesses
             operate.
           </p>
-          <p className="orange-text">The only app you'll ever need to run your business.</p>
+          <p className="orange-text body-text">
+            The only app you'll ever need to run your business.
+          </p>
         </div>
         <div className="contact-us">
           <div>
             <h3 className="about-heading">Contact us</h3>
-            <a href="mailto:sales@shipmnts.com">sales@shipmnts.com</a>
+            <a href="mailto:sales@shipmnts.com" className="body-text">
+              sales@shipmnts.com
+            </a>
           </div>
           <div>
             <h3 className="about-heading">Follow us on</h3>
@@ -52,7 +56,7 @@ export default function AboutSection() {
       </div>
       <Divider className="about-divider" />
       <div>
-        <p className="crafted-text">Crafted with 💜 in Ahmedabad, India</p>
+        <p className="crafted-text body-text">Crafted with 💜 in Ahmedabad, India</p>
       </div>
     </section>
   );

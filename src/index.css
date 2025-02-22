@@ -102,6 +102,26 @@ code {
   font-size: 1.75rem;
 }
 
+button:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  border-radius: 20px !important;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.body-text {
+  font-size: 2rem;
+}
+
+section {
+  padding: 6rem 3rem;
+}
+
 @media (max-width: 550px) {
   .btn-round {
     height: 3.5rem;

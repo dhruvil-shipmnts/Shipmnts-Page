@@ -35,14 +35,14 @@ const LearnAndGrowSection = () => {
       <ColorScreens {...content}>
         <div className="support-card-container">
           {cardData.map((card, index) => (
-            <div className="support-card" key={index}>
+            <div className="support-card card" key={index}>
               <div
                 className="support-round-icon-container"
                 style={{ background: content.backgroundColor }}
               >
                 <img src={card.icon} alt={card.text} />
               </div>
-              <p>{card.text}</p>
+              <p className="body-text">{card.text}</p>
             </div>
           ))}
         </div>

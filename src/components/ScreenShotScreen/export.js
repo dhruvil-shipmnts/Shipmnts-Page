@@ -25,17 +25,17 @@ export const SCREEN_SHOT_CONTENT = {
   customer_centric_features: {
     upperImage: Box,
     lowerImage: Globe,
-    title: 'Instant Experiences for your Customers',
+    title: 'Instant experiences for your customers',
     backgroundColor: '#FFF2E2',
     titleColor: '#7A1600',
     images: [
-      { imgSrc: PublicLink, title: 'No login Public link' },
+      { imgSrc: PublicLink, title: 'No login public link' },
       {
         imgSrc: ShipperInsight,
-        title: 'Shipper Insight',
+        title: 'Shipper insight',
       },
-      { imgSrc: DocumentCollaboration, title: 'Document Collaboration' },
-      { imgSrc: OrderManagement, title: 'Order Management' },
+      { imgSrc: DocumentCollaboration, title: 'Document collaboration' },
+      { imgSrc: OrderManagement, title: 'Order management' },
     ],
     sectionId: 'digital_platform_section',
   },
