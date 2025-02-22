@@ -37,19 +37,6 @@
   border: none;
 }
 
-.image-viewer-modal-image {
-  width: 100%;
-  height: 100%;
-}
-
-.image-viewer-modal .ant-modal-content {
-  padding: 0 0 !important;
-}
-
-.image-viewer-modal .ant-modal {
-  width: 80%;
-}
-
 @media screen and (max-width: 560px) {
   .demo-button-large {
     height: 40px !important;

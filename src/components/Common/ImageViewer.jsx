@@ -1,45 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import { Modal } from 'antd';
+import React, { useEffect } from 'react';
 import { useImageViewer } from '../../hooks/useImageViewer';
+import './ImageViewerModal.css'; // Import the custom CSS
 
 const ImageViewerModal = () => {
   const { imageSrc, closeImageViewer } = useImageViewer();
-  const [modalWidth, setModalWidth] = useState(window.innerWidth < 768 ? '100%' : '90%');
 
   useEffect(() => {
-    const handleResize = () => {
-      setModalWidth(window.innerWidth < 768 ? '100%' : '90%');
+    if (!imageSrc) return;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'auto';
     };
+  }, [imageSrc]);
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  if (!imageSrc) return null;
 
   return (
-    <div className="image-viewer-modal">
-      <Modal
-        open={!!imageSrc}
-        footer={null}
-        onCancel={closeImageViewer}
-        style={{
-          backgroundColor: 'transparent',
-          width: 'fit-content',
-        }}
-        centered
-        closeIcon={null}
-        width={modalWidth}
-      >
-        <div className="modal-image-container">
-          {imageSrc && (
-            <img
-              className="image-viewer-modal-image"
-              src={imageSrc}
-              alt="Preview"
-              style={{ borderRadius: 8 }}
-            />
-          )}
-        </div>
-      </Modal>
+    <div className="image-viewer-overlay" onClick={closeImageViewer}>
+      <button className="close-button btn-round" onClick={closeImageViewer}>
+        &times;
+      </button>
+      <div className="image-viewer-modal" onClick={(e) => e.stopPropagation()}>
+        <img className="modal-image" src={imageSrc} alt="Preview" />
+      </div>
     </div>
   );
 };

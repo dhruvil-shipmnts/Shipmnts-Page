@@ -38,4 +38,13 @@
   .title-image {
     height: 8vh;
   }
+
+  .screenshot-screen-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .screenshot-caroused-container {
+    margin-left: 0;
+  }
 }
