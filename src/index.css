@@ -90,6 +90,18 @@ code {
   align-items: center;
 }
 
+.text-level-1 {
+  font-size: 4rem;
+}
+
+.text-level-2 {
+  font-size: 3rem;
+}
+
+.text-level-3 {
+  font-size: 1.75rem;
+}
+
 @media (max-width: 550px) {
   .btn-round {
     height: 3.5rem;

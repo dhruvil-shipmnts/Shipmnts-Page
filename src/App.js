@@ -5,7 +5,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import Highlight from './components/HighlightSection/Highlight';
 import ScreenShotScreen from './components/ScreenShotScreen/ScreenShotScreen';
 import AboutSection from './components/AboutSection/AboutSection';
-// import Arcade from './components/Arcade/Arcade';
+import Arcade from './components/Arcade/Arcade';
 import PricingComponent from './components/PricingPage/PricingComponent';
 import LearnAndGrowSection from './components/ColorScreens/LearnAndGrowSection';
 import SecuritySection from './components/ColorScreens/SecuritySection';
@@ -32,7 +32,7 @@ function App() {
         <LandingPage />
         <Services />
         <Highlight />
-        {/* <Arcade /> */}
+        <Arcade />
         <ScreenShotScreen {...SCREEN_SHOT_CONTENT['customer_centric_features']} />
         <TabScreen />
         <ScreenShotScreen {...SCREEN_SHOT_CONTENT['actionable_insight']} />
