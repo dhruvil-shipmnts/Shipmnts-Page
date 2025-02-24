@@ -12,11 +12,12 @@ import SecuritySection from './components/ColorScreens/SecuritySection';
 import PricingModelAd from './components/ColorScreens/PricingModelAd';
 import { SCREEN_SHOT_CONTENT } from './components/ScreenShotScreen/export';
 import TabScreen from './components/TabScreen/TabScreen';
-import { ConfigProvider, FloatButton } from 'antd';
+import { ConfigProvider } from 'antd';
 import ImageViewerModal from './components/Common/ImageViewer';
 import Services from './components/Services/Services';
-import { WhatsAppOutlined } from '@ant-design/icons';
 import FloatingButton from './components/Common/FloatButton';
+import { Route, Routes } from 'react-router-dom';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 
 function App() {
   return (
@@ -33,19 +34,31 @@ function App() {
         <FloatingButton shape="square" />
 
         <Header />
-        <LandingPage />
-        <Services />
-        <Highlight />
-        <Arcade />
-        <ScreenShotScreen {...SCREEN_SHOT_CONTENT['customer_centric_features']} />
-        <TabScreen />
-        <ScreenShotScreen {...SCREEN_SHOT_CONTENT['actionable_insight']} />
-        <ScreenShotScreen {...SCREEN_SHOT_CONTENT['productivity_and_multi_party_collaboration']} />
-        <LearnAndGrowSection />
-        <SecuritySection />
-        <PricingModelAd />
-        <PricingComponent />
-        <AboutSection />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <LandingPage />
+                <Services />
+                <Highlight />
+                <Arcade />
+                <ScreenShotScreen {...SCREEN_SHOT_CONTENT['customer_centric_features']} />
+                <TabScreen />
+                <ScreenShotScreen {...SCREEN_SHOT_CONTENT['actionable_insight']} />
+                <ScreenShotScreen
+                  {...SCREEN_SHOT_CONTENT['productivity_and_multi_party_collaboration']}
+                />
+                <LearnAndGrowSection />
+                <SecuritySection />
+                <PricingModelAd />
+                <PricingComponent />
+                <AboutSection />
+              </>
+            }
+          />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
       </>
     </ConfigProvider>
   );

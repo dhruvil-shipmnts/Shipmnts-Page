@@ -1,0 +1,22 @@
+.privacy-policy-container {
+  padding-top: 7rem;
+}
+
+.privacy-policy-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  border: 1px solid #e0e0e0;
+}
+
+.privacy-policy-container tr td {
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+}
+
+/* mobile */
+@media screen and (max-width: 560px) {
+  .privacy-policy-container {
+    padding-top: 10rem;
+  }
+}

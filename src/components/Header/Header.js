@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { HeaderLogo } from '../../assets';
 import DemoButton from '../Common/DemoButton';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -27,7 +28,9 @@ export default function Header() {
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="header-container">
-        <img className="logo" src={HeaderLogo} alt="Logo" />
+        <Link to={'/'}>
+          <img className="logo" src={HeaderLogo} alt="Logo" />
+        </Link>
         <div className="actions">
           <span id="nav-demo-button">
             <DemoButton />

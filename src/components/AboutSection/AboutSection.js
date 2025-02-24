@@ -2,6 +2,7 @@ import React from 'react';
 import { HeaderLogo, LinkedIn } from '../../assets';
 import '../AboutSection/AboutSection.css';
 import { Divider } from 'antd';
+import { Link } from 'react-router-dom';
 
 export default function AboutSection() {
   const socials = [
@@ -15,7 +16,8 @@ export default function AboutSection() {
   const OtherLinks = [
     {
       label: 'Privacy Policy',
-      link: 'https://shipmnts.com/privacy-policy',
+      link: '/privacy-policy',
+      type: 'internal',
     },
     {
       label: 'Help',
@@ -62,15 +64,21 @@ export default function AboutSection() {
             <h3 className="about-heading">Other Links</h3>
             {OtherLinks.map((link, index) => (
               <p>
-                <a
-                  key={index}
-                  href={link.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="body-text"
-                >
-                  {link.label}
-                </a>
+                {link?.type !== 'internal' ? (
+                  <a
+                    key={index}
+                    href={link.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="body-text"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link to={link.link} className="body-text">
+                    {link.label}
+                  </Link>
+                )}
               </p>
             ))}
           </div>
