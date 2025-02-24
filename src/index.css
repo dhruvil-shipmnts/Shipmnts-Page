@@ -21,6 +21,10 @@ a {
   --brand-orange-1: #fe6533;
   --brown: #3a2b2b;
   --primary-bg-color: #f8f7f2;
+  --oval-button-radius: 28px;
+  --large-button-height: 40px;
+  --default-button-border-radius: 4rem;
+  --default-button-height: 40px;
 }
 
 h1,
@@ -65,14 +69,17 @@ code {
 }
 
 .btn {
-  border-radius: 4rem;
   border: none;
   padding: 10px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  height: 40px;
+  height: var(--default-button-height);
+}
+
+.btn-rounded {
+  border-radius: var(--default-button-border-radius);
 }
 
 .btn-large {
@@ -90,19 +97,7 @@ code {
   align-items: center;
 }
 
-.text-level-1 {
-  font-size: 4rem;
-}
-
-.text-level-2 {
-  font-size: 3rem;
-}
-
-.text-level-3 {
-  font-size: 1.75rem;
-}
-
-button:hover {
+.btn:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -128,6 +123,24 @@ section {
   border-radius: 16px;
 }
 
+.button-large {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.button-small {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.button-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 @media (max-width: 550px) {
   .btn-round {
     height: 3.5rem;
@@ -145,5 +158,15 @@ section {
 
   .img-border {
     border-radius: 8px;
+  }
+
+  .button-large {
+    font-size: 14px;
+  }
+  .button-small {
+    font-size: 14px;
+  }
+  .button-text {
+    font-size: 14px;
   }
 }

@@ -49,7 +49,7 @@ const CarouselScreenWrapper = ({
           {title}
         </h6>
       </div>
-      <div className="section-navigate-button">
+      <div className="section-navigate-button btn-rounded button-large">
         <a href={`#${sectionHyperLink}`} style={{ color: titleColor }}>
           Learn more
         </a>

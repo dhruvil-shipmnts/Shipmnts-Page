@@ -16,7 +16,7 @@ const ImageViewerModal = () => {
 
   return (
     <div className="image-viewer-overlay" onClick={closeImageViewer}>
-      <button className="close-button btn-round" onClick={closeImageViewer}>
+      <button className="close-button btn-round button-large" onClick={closeImageViewer}>
         &times;
       </button>
       <div className="image-viewer-modal" onClick={(e) => e.stopPropagation()}>

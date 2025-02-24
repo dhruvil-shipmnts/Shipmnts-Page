@@ -30,7 +30,7 @@ export default function TabCard({ activeItem, style, items, index }) {
         <Flex justify="end" className="tab-button-div">
           <div className="tab-add-button btn-round" onClick={handleModalOpen}>
             <img className="tab-add-icon " src={Plus} alt="Plus" />
-            <span className="tab-add-text">Read More</span>
+            <span className="tab-add-text button-small">Read More</span>
           </div>
         </Flex>
       </div>

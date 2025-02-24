@@ -26,7 +26,7 @@ const Modal = ({ isOpen, onClose, children }) => {
 
   return (
     <div className="image-viewer-overlay" onClick={onClose}>
-      <button className="close-button btn-round" onClick={onClose}>
+      <button className="close-button btn-round button-large" onClick={onClose}>
         &times;
       </button>
       <div className="image-viewer-modal" onClick={(e) => e.stopPropagation()}>

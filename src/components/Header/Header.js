@@ -35,7 +35,7 @@ export default function Header() {
           <span id="nav-demo-button">
             <DemoButton />
           </span>
-          <button className="btn sign-in-button">
+          <button className="btn sign-in-button btn-rounded button-small">
             <a href="https://booking.shipmnts.com/">Sign In</a>
           </button>
         </div>

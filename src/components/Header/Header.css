@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 600px) {
-  #nav-demo-button {
+  .sign-in-button {
     display: none !important;
   }
 

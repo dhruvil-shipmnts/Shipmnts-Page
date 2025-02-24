@@ -39,6 +39,7 @@ export const PricingComponent = () => {
         <h2 className="pricing-title ">Your Front and Back Offices in One Logistics Software.</h2>
 
         <DemoButton
+          className="pricing-page-demo-button"
           size="large"
           variant={'black-white'}
           icon={<img src={PlayLogoBlack} alt="" />}
