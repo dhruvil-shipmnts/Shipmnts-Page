@@ -12,9 +12,11 @@ import SecuritySection from './components/ColorScreens/SecuritySection';
 import PricingModelAd from './components/ColorScreens/PricingModelAd';
 import { SCREEN_SHOT_CONTENT } from './components/ScreenShotScreen/export';
 import TabScreen from './components/TabScreen/TabScreen';
-import { ConfigProvider } from 'antd';
+import { ConfigProvider, FloatButton } from 'antd';
 import ImageViewerModal from './components/Common/ImageViewer';
 import Services from './components/Services/Services';
+import { WhatsAppOutlined } from '@ant-design/icons';
+import FloatingButton from './components/Common/FloatButton';
 
 function App() {
   return (
@@ -22,11 +24,13 @@ function App() {
       theme={{
         token: {
           colorPrimary: '#fe6533',
+          controlHeightLG: '60px',
         },
       }}
     >
       <>
         <ImageViewerModal />
+        <FloatingButton shape="square" />
 
         <Header />
         <LandingPage />

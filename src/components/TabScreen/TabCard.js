@@ -28,10 +28,10 @@ export default function TabCard({ activeItem, style, items, index }) {
       <div className="tab-card" style={style}>
         <h2>{activeItem.title}</h2>
         <Flex justify="end" className="tab-button-div">
-          <button className="tab-add-button btn-round" onClick={handleModalOpen}>
+          <div className="tab-add-button btn-round" onClick={handleModalOpen}>
             <img className="tab-add-icon " src={Plus} alt="Plus" />
             <span className="tab-add-text">Read More</span>
-          </button>
+          </div>
         </Flex>
       </div>
     </>

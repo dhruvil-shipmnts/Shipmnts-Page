@@ -1,11 +1,11 @@
 import React from 'react';
 import ColorScreens from './ColorScreens';
-import { SecuritySectionBg } from '../../assets/index';
+import { SecurityNew } from '../../assets/index';
 
 const SecuritySection = () => {
   const content = {
     title: 'With Great Power Comes Great Security',
-    imageSrc: SecuritySectionBg,
+    imageSrc: SecurityNew,
     backgroundColor: '#FAE8FF',
     titleColor: '#60007B',
   };

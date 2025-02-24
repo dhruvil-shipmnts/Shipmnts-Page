@@ -7,12 +7,34 @@ export default function Arcade() {
       <div className="section-title-container">
         <h1 className="section-title">Take a Closer Look</h1>
       </div>
-      <div>
+      <div
+        style={{
+          position: 'relative',
+          display: 'block',
+          height: '100%',
+          minHeight: '70vh',
+          width: '80vw',
+        }}
+      >
         <iframe
-          style={{ height: '85vh', width: '90vw', border: 'none' }}
-          src="https://app.arcade.software/share/zVtYhb35Js2t5DcEHzFS?embed_referrer=http%3A%2F%2Flocalhost%3A3000%2F"
-          allowFullScreen
-          title="Arcade Experience"
+          class="arcade-collection"
+          src="https://app.arcade.software/share/collections/DRgZ22NyIOKaiWYGSMu4?embed&show_copy_link=true&force_no_header=true"
+          title="Experience Shipmnts"
+          frameborder="0"
+          loading="lazy"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          sandbox="allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-popups"
+          allow="clipboard-write"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            'color-scheme': 'light',
+          }}
         ></iframe>
       </div>
     </section>

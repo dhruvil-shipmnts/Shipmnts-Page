@@ -1,16 +1,11 @@
 import React from 'react';
 import ColorScreens from './ColorScreens';
-import {
-  AutoStoriesIcon,
-  BIDLandscapeIcon,
-  LearnAndGrowBg,
-  TrackingPadIcon,
-} from '../../assets/index';
+import { AutoStoriesIcon, BIDLandscapeIcon, SupportNew, TrackingPadIcon } from '../../assets/index';
 
 const LearnAndGrowSection = () => {
   const content = {
     title: 'Learn and Grow Better with Excellent Support and Resources',
-    imageSrc: LearnAndGrowBg,
+    imageSrc: SupportNew,
     backgroundColor: '#FEFFC7',
     titleColor: '#7A1600',
   };

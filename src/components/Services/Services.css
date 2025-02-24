@@ -1,11 +1,11 @@
 .services-section {
   position: relative;
   background-color: #fe6533; /* Background color neeche */
-  height: 96vh;
+  height: 88vh;
   padding: 3rem 0;
 }
 
-.services-section::after {
+.services-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -27,20 +27,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Items ko horizontally center align karega */
-  gap: 3rem;
+  gap: 4rem;
   row-gap: 1.5rem;
+  /* padding: 4rem 0; */
   width: 60%;
   z-index: 1001;
-  flex-direction: column;
-}
-
-.services-card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  z-index: 1001;
-  flex-wrap: wrap;
 }
 
 .services-container p {
@@ -71,7 +62,7 @@
   justify-content: center;
   gap: 1rem;
   z-index: 1001;
-  border-radius: 30px !important;
+  border-radius: 20px !important;
 }
 
 .loved-section p {
@@ -83,6 +74,12 @@
 .loved-section img {
   height: 1.75rem;
   width: 1.75rem;
+}
+
+@media (min-width: 801px) {
+  .service-card {
+    width: calc(100% / 6 - 3rem); /* 6 columns with spacing */
+  }
 }
 
 /* mobile */
@@ -121,5 +118,9 @@
 
   .loved-section p {
     font-size: 24px !important;
+  }
+
+  .service-card {
+    width: calc(100% / 3 - 3rem); /* 3 columns with spacing */
   }
 }

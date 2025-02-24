@@ -16,7 +16,7 @@ export { default as AccountsPayable5 } from './product/AccountsPayables/Accounts
 export { default as AccountsPayable6 } from './product/AccountsPayables/AccountsPayable6.svg';
 
 export { default as AccountsReceivable1 } from './product/AccountsReceivables/AccountsReceivable1.svg';
-export { default as AccountsReceivable2 } from './product/AccountsReceivables/AccountsReceivable2.svg';
+export { default as AccountsReceivable2 } from './product/AccountsReceivables/AccountsReceivable2.png';
 export { default as AccountsReceivable3 } from './product/AccountsReceivables/AccountsReceivable3.svg';
 export { default as AccountsReceivable4 } from './product/AccountsReceivables/AccountsReceivable4.svg';
 export { default as AccountsReceivable5 } from './product/AccountsReceivables/AccountsReceivable5.svg';
@@ -120,3 +120,7 @@ export { default as Collaboration } from './product/Documentation/Easy in-app co
 export { default as Editor } from './product/Documentation/Real Time document editor with credit control.png';
 export { default as DocWorkflow } from './product/Documentation/Manage document level workflow for both forwarding & NVO.png';
 export { default as Paperless } from './product/Documentation/Go Paperless with organized digital storage.png';
+
+export { default as SupportNew } from './utilities/Background/Support.svg';
+export { default as SecurityNew } from './utilities/Background/Security.svg';
+export { default as PricingNew } from './utilities/Background/Pricing.svg';

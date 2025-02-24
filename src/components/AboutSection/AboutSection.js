@@ -96,9 +96,9 @@ export default function AboutSection() {
       </div>
       <Divider className="about-divider" />
       <div className="footer-text-container">
-        <span className="crafted-text body-text">Crafted with 💜 in Ahmedabad, India</span>
+        <span className="crafted-text body-text">Crafted with 💜 in India</span>
         <span className="copyright-text body-text">
-          © 2023 Logistixian Technologies Private Limited.
+          © 2025 Logistixian Technologies Private Limited.
         </span>
       </div>
     </div>
