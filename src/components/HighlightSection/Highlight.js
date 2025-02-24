@@ -1,22 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Highlight.css';
 import CarouselWrapper from '../Carousel/CarouselWrapper';
 import {
+  Actionable_Desktop,
+  Actionable_Mobile,
+  AI_Desktop,
+  AI_Mobile,
   ArrowForward,
-  BalanceHighLightBg,
-  CollaborateHighlightBg,
-  GenaiHighlightBg,
-  LearnAndGrowBg,
-  MobileChats,
-  MobileCuttingPrice,
-  MobileDigitalPlatform,
-  MobileGenAI,
-  MobileSecurity,
-  MobileSupport,
-  MobileTeam,
-  SecurityHighlightBg,
-  TeamHighlightBg,
-  WebHighlightBg,
+  Cutting_Desktop,
+  Cutting_Mobile,
+  Digital_Desktop,
+  Digital_Mobile,
+  Personalised_Desktop,
+  Personalised_Mobile,
+  Productivity_Desktop,
+  Productivity_Mobile,
+  With_Desktop,
+  With_Mobile,
 } from '../../assets';
 
 const CarouselScreenWrapper = ({
@@ -27,23 +27,33 @@ const CarouselScreenWrapper = ({
   sectionHyperLink,
   mobileImageSrc,
 }) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  // Update state on window resize
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <div
       className="page-container card"
       style={{
-        backgroundColor: backgroundColor || '#ffffff',
+        backgroundImage: `url("${isMobile ? mobileImageSrc : imageSrc}")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
-      <h6 className="page-title" style={{ color: titleColor || '#000000' }}>
-        {title}
-      </h6>
-      <img className="page-image desktop-image" src={imageSrc} alt={title} />
-      <img className="page-image mobile-image" src={mobileImageSrc} alt={title} />
-
-      <div className="section-navigate-icon btn-round">
-        <a href={`#${sectionHyperLink}`}>
-          <img src={ArrowForward} alt="->" />
-        </a>
+      <div className="highlight-card-header">
+        <h6 className="page-title" style={{ color: titleColor || '#000000' }}>
+          {title}
+        </h6>
+        <div className="section-navigate-icon btn-round">
+          <a href={`#${sectionHyperLink}`}>
+            <img src={ArrowForward} alt="->" />
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -53,59 +63,59 @@ const Highlight = () => {
   const content = [
     {
       title: 'Digital Platform for your Customers',
-      imageSrc: WebHighlightBg,
+      imageSrc: Digital_Desktop,
       backgroundColor: '#FFF2E2',
       titleColor: '#7A1600',
       sectionHyperLink: 'digital_platform_section',
-      mobileImageSrc: MobileDigitalPlatform,
+      mobileImageSrc: Digital_Mobile,
     },
     {
       title: 'AI first apps for more efficient teams',
-      imageSrc: TeamHighlightBg,
+      imageSrc: AI_Desktop,
       backgroundColor: '#FEFFC7',
       titleColor: '#7A1600',
       sectionHyperLink: 'ai_driven_apps',
-      mobileImageSrc: MobileTeam,
+      mobileImageSrc: AI_Mobile,
     },
     {
       title: 'Actionable Insights for Faster Decisions',
-      imageSrc: GenaiHighlightBg,
+      imageSrc: Actionable_Desktop,
       backgroundColor: '#FAE8FF',
       titleColor: '#60007B',
       sectionHyperLink: 'actionable_insight',
-      mobileImageSrc: MobileGenAI,
+      mobileImageSrc: Actionable_Mobile,
     },
     {
       title: 'Productivity & Multi-Party Collaboration toolkit',
-      imageSrc: CollaborateHighlightBg,
+      imageSrc: Productivity_Desktop,
       backgroundColor: '#FFF2E2',
       titleColor: '#7A1600',
       sectionHyperLink: 'collaboration',
-      mobileImageSrc: MobileChats,
+      mobileImageSrc: Productivity_Mobile,
     },
     {
       title: 'Personalized and Proactive Support you can count on',
-      imageSrc: LearnAndGrowBg,
+      imageSrc: Personalised_Desktop,
       backgroundColor: '#FEFFC7',
       titleColor: '#7A1600',
       sectionHyperLink: 'support',
-      mobileImageSrc: MobileSupport,
+      mobileImageSrc: Personalised_Mobile,
     },
     {
       title: 'With Great Power comes Great Security',
-      imageSrc: SecurityHighlightBg,
+      imageSrc: With_Desktop,
       backgroundColor: '#FAE8FF',
       titleColor: '#60007B',
       sectionHyperLink: 'security',
-      mobileImageSrc: MobileSecurity,
+      mobileImageSrc: With_Mobile,
     },
     {
       title: 'Cutting-edge software at Forwarder Friendly Prices',
-      imageSrc: BalanceHighLightBg,
+      imageSrc: Cutting_Desktop,
       backgroundColor: '#FFF2E2',
       titleColor: '#7A1600',
       sectionHyperLink: 'pricing',
-      mobileImageSrc: MobileCuttingPrice,
+      mobileImageSrc: Cutting_Mobile,
     },
   ];
   return (

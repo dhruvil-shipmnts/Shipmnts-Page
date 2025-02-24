@@ -35,7 +35,7 @@ const LearnAndGrowSection = () => {
       <ColorScreens {...content}>
         <div className="support-card-container">
           {cardData.map((card, index) => (
-            <div className="support-card card" key={index}>
+            <div className="support-card card disable-hover" key={index}>
               <div
                 className="support-round-icon-container"
                 style={{ background: content.backgroundColor }}

@@ -1,6 +1,8 @@
 .screen-shot-loader {
   background-color: #ffffff;
   padding: 1.5rem;
+  border-radius: 20px;
+  min-height: 250px;
 }
 
 .screen-shot img {
@@ -25,6 +27,6 @@
 @media (max-width: 650px) {
   .screen-shot-loader {
     margin: 0 auto;
-    padding: 1.5rem 1rem;
+    border-radius: 0;
   }
 }

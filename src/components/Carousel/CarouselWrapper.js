@@ -41,6 +41,7 @@ export default function CarouselWrapper({
           0: { slidesPerView: slidesPerView ?? 1 },
           768: { slidesPerView: slidesPerView ?? 1.5 },
         }}
+        keyboard={{ enabled: true }} // Enable keyboard control
       >
         {(children || []).map((e, index) => (
           <SwiperSlide key={index}>{e}</SwiperSlide>

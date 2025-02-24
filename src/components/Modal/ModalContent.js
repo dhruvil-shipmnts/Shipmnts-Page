@@ -1,7 +1,6 @@
 import React from 'react';
 import CarouselWrapper from '../Carousel/CarouselWrapper';
 import '../Modal/ModalContent.css';
-import { CloseOutlined } from '@ant-design/icons';
 
 export default function ModalContent({ items, onClose, index }) {
   return (
@@ -12,7 +11,6 @@ export default function ModalContent({ items, onClose, index }) {
             <div className="model-content-component">
               <div className="modal-title-div">
                 <h2 className="screen-shot-title">{item.title}</h2>
-                <CloseOutlined className="btn-round model-close-button" onClick={() => onClose()} />
               </div>
               <div>
                 <img className="model-content-image" src={item.image} alt="Product" />

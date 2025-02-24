@@ -52,6 +52,7 @@
   margin: 0;
   width: 70%;
   line-height: normal;
+  z-index: 1001;
 }
 
 @media (max-width: 550px) {

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../TabScreen/TabCard.css';
-import Modal from '../Modal/Modal';
 import ModalContent from '../Modal/ModalContent';
 import { Plus } from '../../assets';
 import { Flex } from 'antd';
+import Modal from '../Common/Modal';
 
 export default function TabCard({ activeItem, style, items, index }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ export default function TabCard({ activeItem, style, items, index }) {
   };
   return (
     <>
-      <Modal isOpen={isOpen}>
+      <Modal isOpen={isOpen} onClose={handleCloseModal}>
         <ModalContent onClose={handleCloseModal} items={items} index={index} />
       </Modal>
       <div className="tab-card" style={style}>

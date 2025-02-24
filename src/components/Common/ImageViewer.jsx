@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useImageViewer } from '../../hooks/useImageViewer';
-import './ImageViewerModal.css'; // Import the custom CSS
 
 const ImageViewerModal = () => {
   const { imageSrc, closeImageViewer } = useImageViewer();

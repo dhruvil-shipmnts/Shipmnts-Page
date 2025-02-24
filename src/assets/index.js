@@ -8,13 +8,6 @@ export { default as LandingPageImage } from './LandingPage.png';
 
 export { default as PDP } from './product/PDP.svg';
 
-export { default as BalanceHighLightBg } from './utilities/Highlight/balance.svg';
-export { default as CollaborateHighlightBg } from './utilities/Highlight/collaborate.png';
-export { default as GenaiHighlightBg } from './utilities/Highlight/genai.png';
-export { default as SecurityHighlightBg } from './utilities/Highlight/security.png';
-export { default as TeamHighlightBg } from './utilities/Highlight/team.png';
-export { default as WebHighlightBg } from './utilities/Highlight/web.png';
-
 export { default as AccountsPayable1 } from './product/AccountsPayables/AccountsPayable1.svg';
 export { default as AccountsPayable2 } from './product/AccountsPayables/AccountsPayable2.svg';
 export { default as AccountsPayable3 } from './product/AccountsPayables/AccountsPayable3.svg';
@@ -69,7 +62,6 @@ export { default as Box } from './utilities/UIElement/box.png';
 export { default as Screenshot1 } from './utilities/UIElement/screenshot1.png';
 export { default as Plus } from './utilities/UIElement/plus.svg';
 
-export { default as SupportHighlight } from './utilities/Highlight/support.png';
 export { default as WhiteCircles } from './utilities/whiteCircles.svg';
 export { default as Teams } from './utilities/Teams.svg';
 
@@ -99,10 +91,32 @@ export { default as Heart } from './utilities/Heart.svg';
 
 export { default as FooterBg } from './utilities/footer_bg.svg';
 
-export { default as MobileSecurity } from './utilities/Highlight/Mobile/security.svg';
-export { default as MobileTeam } from './utilities/Highlight/Mobile/team.svg';
-export { default as MobileCuttingPrice } from './utilities/Highlight/Mobile/cutting_price.svg';
-export { default as MobileSupport } from './utilities/Highlight/Mobile/support.svg';
-export { default as MobileChats } from './utilities/Highlight/Mobile/chats.svg';
-export { default as MobileGenAI } from './utilities/Highlight/Mobile/genai.svg';
-export { default as MobileDigitalPlatform } from './utilities/Highlight/Mobile/digital_platform.svg';
+export { default as AI_Desktop } from './utilities/Highlight/Highlights - Desktop/Desktop - AI first apps for more efficient teams.svg';
+export { default as Cutting_Desktop } from './utilities/Highlight/Highlights - Desktop/Desktop - Cutting-edge software at Forwarder Friendly Prices.svg';
+export { default as Productivity_Desktop } from './utilities/Highlight/Highlights - Desktop/Desktop - Productivity & Multi-Party Collaboration toolkit.svg';
+export { default as Personalised_Desktop } from './utilities/Highlight/Highlights - Desktop/Desktop - Personalised and Proactive Support you can count on.svg';
+export { default as Actionable_Desktop } from './utilities/Highlight/Highlights - Desktop/Desktop - Actionable Insights for Faster Decisions.svg';
+export { default as With_Desktop } from './utilities/Highlight/Highlights - Desktop/Desktop - With Great Power comes Great Security.svg';
+export { default as Digital_Desktop } from './utilities/Highlight/Highlights - Desktop/Desktop - Digital Platform for your Customers.svg';
+
+export { default as Cutting_Mobile } from './utilities/Highlight/HIghlights - Mobile/Mobile - Cutting-edge software at Forwarder Friendly Prices.svg';
+export { default as Productivity_Mobile } from './utilities/Highlight/HIghlights - Mobile/Mobile - Productivity & Multi-Party Collaboration toolkit.svg';
+export { default as Actionable_Mobile } from './utilities/Highlight/HIghlights - Mobile/Mobile - Actionable Insights for Faster Decisions.svg';
+export { default as With_Mobile } from './utilities/Highlight/HIghlights - Mobile/Mobile - With Great Power comes Great Security.svg';
+export { default as AI_Mobile } from './utilities/Highlight/HIghlights - Mobile/Mobile - AI first apps for more efficient teams.svg';
+export { default as Personalised_Mobile } from './utilities/Highlight/HIghlights - Mobile/Mobile - Personalised and Proactive Support you can count on.svg';
+export { default as Digital_Mobile } from './utilities/Highlight/HIghlights - Mobile/Mobile - Digital Platform for your Customers.svg';
+
+export { default as Notifications } from './product/CsOperation/Single Click Multichannel Notifications.png';
+export { default as Alerts } from './product/CsOperation/Exception Automation Monitoring & Alerts.png';
+export { default as Workflow } from './product/CsOperation/Workflow & milestone management.png';
+export { default as HBL } from './product/CsOperation/HBL.png';
+export { default as CreditControls } from './product/CsOperation/Operational Level Credit Controls.png';
+export { default as Tracking } from './product/CsOperation/Multimodal Tracking Automation.png';
+
+export { default as Generation } from './product/Documentation/Single Click Multimodal Document Generation.png';
+export { default as Transmission } from './product/Documentation/In App E-AWB Transmission.png';
+export { default as Collaboration } from './product/Documentation/Easy in-app collaboration for internal teams & cx.png';
+export { default as Editor } from './product/Documentation/Real Time document editor with credit control.png';
+export { default as DocWorkflow } from './product/Documentation/Manage document level workflow for both forwarding & NVO.png';
+export { default as Paperless } from './product/Documentation/Go Paperless with organized digital storage.png';

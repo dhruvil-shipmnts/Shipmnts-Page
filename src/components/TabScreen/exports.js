@@ -22,6 +22,18 @@ import {
   AccountsPayable4,
   AccountsPayable5,
   AccountsPayable6,
+  Tracking,
+  Workflow,
+  Notifications,
+  CreditControls,
+  Alerts,
+  HBL,
+  DocWorkflow,
+  Generation,
+  Editor,
+  Collaboration,
+  Paperless,
+  Transmission,
 } from '../../assets';
 import TabContainer from './TabContainer';
 
@@ -189,71 +201,66 @@ export const ACCOUNT_PAYABLE = [
 export const DOCUMENTATION = [
   {
     key: 'documentation_1',
-    title: 'Automated Bill of Lading Generation',
-    image: 'Documentation1',
-    paragraph:
-      'Generate Bill of Lading instantly with automated templates and real-time data validation.',
+    title: 'Manage document level workflow for both forwarding & NVO',
+    image: DocWorkflow,
   },
   {
     key: 'documentation_2',
-    title: 'Digitized Document Storage',
-    image: 'Documentation2',
-    paragraph:
-      'Store and manage shipping documents securely with easy retrieval and access controls.',
+    title: 'Single Click Multimodal Document Generation ',
+    image: Generation,
   },
   {
     key: 'documentation_3',
-    title: 'Customizable Templates',
-    image: 'Documentation3',
-    paragraph:
-      'Create and modify document templates to meet different compliance and operational needs.',
+    title: 'Real Time document editor with credit control',
+    image: Editor,
   },
   {
     key: 'documentation_4',
-    title: 'Real-time Status Updates',
-    image: 'Documentation4',
-    paragraph: 'Track document approvals and updates in real time to ensure seamless operations.',
+    title: 'Easy in-app collaboration for internal teams & cx',
+    image: Collaboration,
   },
   {
     key: 'documentation_5',
-    title: 'Regulatory Compliance Management',
-    image: 'Documentation5',
-    paragraph:
-      'Ensure all documentation complies with international trade and customs regulations.',
+    title: 'Go Paperless with organized digital storage ',
+    image: Paperless,
+  },
+  {
+    key: 'documentation_6',
+    title: 'In App E-AWB Transmission ',
+    image: Transmission,
   },
 ];
 
 export const CS_OPERATIONS = [
   {
     key: 'cs_operations_1',
-    title: 'Automated Shipment Tracking',
-    image: 'CSOperations1',
-    paragraph: 'Stay updated with real-time tracking and proactive notifications for shipments.',
+    title: 'Multimodal Tracking Automation ',
+    image: Tracking,
   },
   {
     key: 'cs_operations_2',
-    title: 'Customer Support Ticketing',
-    image: 'CSOperations2',
-    paragraph: 'Manage customer queries efficiently with an integrated support ticketing system.',
+    title: 'Workflow & Milestone Management',
+    image: Workflow,
   },
   {
     key: 'cs_operations_3',
-    title: 'Exception Handling & Alerts',
-    image: 'CSOperations3',
-    paragraph: 'Get notified about shipment delays, damages, or compliance issues instantly.',
+    title: 'Click Multichannel Notifications',
+    image: Notifications,
   },
   {
     key: 'cs_operations_4',
-    title: 'Automated SLA Monitoring',
-    image: 'CSOperations4',
-    paragraph: 'Ensure on-time deliveries and customer satisfaction with automated SLA tracking.',
+    title: 'Operational Level Credit Controls',
+    image: CreditControls,
   },
   {
     key: 'cs_operations_5',
-    title: 'Multi-Channel Communication',
-    image: 'CSOperations5',
-    paragraph:
-      'Seamlessly connect with customers via email, chat, and phone for efficient support.',
+    title: 'DSR / Exception Automation Monitoring & Alerts',
+    image: Alerts,
+  },
+  {
+    key: 'cs_operations_6',
+    title: 'AI powered Auto record Creation with Booking copy/ MBL/ HBL',
+    image: HBL,
   },
 ];
 

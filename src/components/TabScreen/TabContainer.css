@@ -11,14 +11,14 @@
   gap: 3px;
   background-color: #f5f5f5;
   padding: 2px;
-  border-radius: 22px;
+  border-radius: 12px;
   white-space: nowrap;
 }
 
 .segment-container .segment-button {
   border: none;
   padding: 5px 10px;
-  border-radius: 24px;
+  border-radius: 10px;
   cursor: pointer;
   height: 54px;
   font-size: 18px;

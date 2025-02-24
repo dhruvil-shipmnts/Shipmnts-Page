@@ -1,10 +1,11 @@
 .services-section {
   position: relative;
   background-color: #fe6533; /* Background color neeche */
-  height: 100vh;
+  height: 96vh;
+  padding: 3rem 0;
 }
 
-.services-section::before {
+.services-section::after {
   content: '';
   position: absolute;
   top: 0;
@@ -19,6 +20,7 @@
 .services-section-title {
   color: #ffffff;
   margin: 0;
+  z-index: 1001;
 }
 
 .services-container {
@@ -27,9 +29,18 @@
   justify-content: center; /* Items ko horizontally center align karega */
   gap: 3rem;
   row-gap: 1.5rem;
-  /* padding: 4rem 0; */
   width: 60%;
   z-index: 1001;
+  flex-direction: column;
+}
+
+.services-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1001;
+  flex-wrap: wrap;
 }
 
 .services-container p {
@@ -59,6 +70,8 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  z-index: 1001;
+  border-radius: 30px !important;
 }
 
 .loved-section p {
@@ -70,12 +83,6 @@
 .loved-section img {
   height: 1.75rem;
   width: 1.75rem;
-}
-
-@media (min-width: 801px) {
-  .service-card {
-    width: calc(100% / 6 - 3rem); /* 6 columns with spacing */
-  }
 }
 
 /* mobile */
@@ -111,9 +118,5 @@
 
   .loved-section p {
     font-size: 24px !important;
-  }
-
-  .service-card {
-    width: calc(100% / 3 - 3rem); /* 3 columns with spacing */
   }
 }
