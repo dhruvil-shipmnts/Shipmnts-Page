@@ -24,6 +24,7 @@ a {
   --oval-button-radius: 28px;
   --large-button-height: 40px;
   --default-button-border-radius: 4rem;
+  --default-button-height: 40px;
 }
 
 h1,
@@ -74,6 +75,7 @@ code {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  height: var(--default-button-height);
 }
 
 .btn-rounded {
@@ -121,6 +123,24 @@ section {
   border-radius: 16px;
 }
 
+.button-large {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.button-small {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.button-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 @media (max-width: 550px) {
   .btn-round {
     height: 3.5rem;
@@ -138,6 +158,16 @@ section {
 
   .img-border {
     border-radius: 8px;
+  }
+
+  .button-large {
+    font-size: 14px;
+  }
+  .button-small {
+    font-size: 14px;
+  }
+  .button-text {
+    font-size: 14px;
   }
 }
 

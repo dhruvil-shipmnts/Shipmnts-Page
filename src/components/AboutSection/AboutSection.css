@@ -101,4 +101,8 @@
     gap: 0.5rem;
     align-items: flex-start;
   }
+
+  .about-container h3 {
+    font-size: 16px;
+  }
 }

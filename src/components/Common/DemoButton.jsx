@@ -14,7 +14,7 @@ const DemoButton = ({
 }) => {
   return (
     <button
-      className={`btn ${className} demo-button-${size} demo-button demo-button-${variant} button-${size} btn-rounded`}
+      className={`btn ${className} demo-button-${size} demo-button demo-button-${variant} btn-rounded button-${size}`}
       style={style}
     >
       <a href={link}>{label}</a>
