@@ -49,7 +49,7 @@ export default function AboutSection() {
         </div>
         <div className="links-section">
           <div>
-            <h3 className="about-heading">Contact us</h3>
+            <h3 className="about-heading  header-4">Contact us</h3>
             <a
               href="mailto:sales@shipmnts.com"
               className="body-text-2"
@@ -61,7 +61,7 @@ export default function AboutSection() {
             </a>
           </div>
           <div className="other-links">
-            <h3 className="about-heading">Other Links</h3>
+            <h3 className="about-heading header-4">Other Links</h3>
             {OtherLinks.map((link, index) => (
               <p>
                 {link?.type !== 'internal' ? (
@@ -85,7 +85,7 @@ export default function AboutSection() {
         </div>
         <div className="socials-section">
           <div>
-            <h3 className="about-heading">Follow us on</h3>
+            <h3 className="about-heading header-4">Follow us on</h3>
             <div className="socials">
               {socials.map((social, index) => (
                 <a
