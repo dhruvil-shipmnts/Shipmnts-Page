@@ -36,9 +36,12 @@ export const PricingComponent = () => {
   return (
     <div id="pricing" className="pricing-page">
       <section className="pricing-page-demo">
-        <h2 className="pricing-title ">Your Front and Back Offices in One Logistics Software.</h2>
+        <h2 className="pricing-title header-2">
+          Your Front and Back Offices in One Logistics Software.
+        </h2>
 
         <DemoButton
+          className="pricing-page-demo-button"
           size="large"
           variant={'black-white'}
           icon={<img src={PlayLogoBlack} alt="" />}

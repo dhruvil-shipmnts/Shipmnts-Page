@@ -5,7 +5,7 @@ export default function Arcade() {
   return (
     <section className="arcade">
       <div className="section-title-container">
-        <h1 className="section-title">Take a Closer Look</h1>
+        <h1 className="section-title header-2">Take a Closer Look</h1>
       </div>
       <div
         style={{

@@ -11,7 +11,7 @@
 
 .tab-card h2 {
   font-weight: 400;
-  font-size: 28px;
+  /* font-size: 28px; */
   text-align: left;
   margin: 0;
 }
@@ -42,7 +42,7 @@
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
-  font-size: 16px;
+  /* font-size: 16px; */
   display: none;
 }
 
@@ -50,7 +50,8 @@
   /* Show Read More button on card hover */
   .tab-card:hover .tab-add-button {
     width: 130px;
-    border-radius: 28px;
+    border-radius: var(--default-button-border-radius);
+    height: var(--large-button-height);
     justify-content: space-evenly;
     padding: 0 12px;
   }
@@ -70,11 +71,11 @@
   }
 
   .tab-card h2 {
-    font-size: 24px;
+    /* font-size: 24px; */
   }
 
   .tab-add-text {
-    font-size: 12px;
+    /* font-size: 12px; */
   }
 
   .tab-button-div {

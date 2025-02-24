@@ -22,7 +22,7 @@ export default function ScreenShotScreen({
       <div className="title-container-screenshot">
         {upperImage && <img className="title-image" src={upperImage} alt="Upper"></img>}
         <h6
-          className="screenshot-screen-title section-title"
+          className="screenshot-screen-title section-title header-2"
           style={{ color: titleColor || '#000000' }}
         >
           {title}

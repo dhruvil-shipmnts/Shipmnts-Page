@@ -10,7 +10,7 @@ export default function ModalContent({ items, onClose, index }) {
           return (
             <div className="model-content-component">
               <div className="modal-title-div">
-                <h2 className="screen-shot-title">{item.title}</h2>
+                <h2 className="screen-shot-title header-3">{item.title}</h2>
               </div>
               <div>
                 <img className="model-content-image  img-border" src={item.image} alt="Product" />

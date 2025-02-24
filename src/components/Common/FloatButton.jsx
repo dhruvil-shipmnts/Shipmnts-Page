@@ -10,11 +10,7 @@ const FloatingButton = ({ onClick }) => {
         target="_blank"
         rel="noreferrer"
       >
-        <WhatsAppOutlined
-          style={{
-            fontSize: '3rem',
-          }}
-        />
+        <WhatsAppOutlined />
       </a>
     </button>
   );

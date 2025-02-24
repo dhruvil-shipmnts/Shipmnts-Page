@@ -10,9 +10,13 @@ const DemoButton = ({
   style = {},
   variant = 'primary',
   icon = null,
+  className = '',
 }) => {
   return (
-    <button className={`btn demo-button-${size} demo-button demo-button-${variant}`} style={style}>
+    <button
+      className={`btn ${className} demo-button-${size} demo-button demo-button-${variant} button-${size} btn-rounded`}
+      style={style}
+    >
       <a href={link}>{label}</a>
       {icon ? icon : showPlayLogo && <img src={PlayLogo} alt="" />}
     </button>

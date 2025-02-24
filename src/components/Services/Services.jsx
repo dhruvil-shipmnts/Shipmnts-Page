@@ -58,20 +58,20 @@ const Services = () => {
 
   return (
     <div className="colorpage-container services-section">
-      <h2 className="section-title services-section-title">{content.title}</h2>
+      <h2 className="section-title services-section-title header-2">{content.title}</h2>
       <div className="services-container">
         {services.map((service, index) => (
           <div className="service-card" key={index}>
             <div className="service-round-icon-container">
               <img src={service.icon} alt={service.name} />
             </div>
-            <p className="service-name">{service.name}</p>
+            <p className="service-name body-text-2">{service.name}</p>
           </div>
         ))}
       </div>
       <div className="loved-section card">
         <img src={Heart} alt="Heart" />
-        <p>Loved by 6000+ users across the globe</p>
+        <p className="body-text-1">Loved by 6000+ users across the globe</p>
       </div>
     </div>
   );

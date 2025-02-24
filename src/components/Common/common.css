@@ -8,12 +8,12 @@
 
 .demo-button-large a {
   font-weight: 600;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 .demo-button-small a {
   font-weight: 600;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 .demo-button-black-white {
@@ -61,7 +61,7 @@
   top: 10px;
   right: 10px;
   border: none;
-  font-size: 24px;
+  /* font-size: 24px; */
   color: black;
   cursor: pointer;
 }
@@ -82,12 +82,12 @@
   }
 
   .demo-button-large a {
-    font-size: 1.5rem !important;
+    /* font-size: 1.5rem !important; */
     font-weight: 600;
   }
 
   .demo-button-small a {
-    font-size: 1.2rem !important;
+    /* font-size: 1.2rem !important; */
     font-weight: 600;
   }
 

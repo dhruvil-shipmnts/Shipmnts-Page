@@ -45,11 +45,11 @@ const CarouselScreenWrapper = ({
       }}
     >
       <div className="highlight-card-header">
-        <h6 className="page-title" style={{ color: titleColor || '#000000' }}>
+        <h6 className="page-title header-3" style={{ color: titleColor || '#000000' }}>
           {title}
         </h6>
       </div>
-      <div className="section-navigate-button">
+      <div className="section-navigate-button button-large btn btn-rounded">
         <a href={`#${sectionHyperLink}`} style={{ color: titleColor }}>
           Learn more
         </a>
@@ -121,7 +121,7 @@ const Highlight = () => {
     <section id="products" className="highlight-container">
       <div className="highlight-center">
         <div className="section-title-container">
-          <h1 className="section-title">Highlights</h1>
+          <h1 className="section-title header-2">Highlights</h1>
         </div>
         <div>
           <CarouselWrapper>

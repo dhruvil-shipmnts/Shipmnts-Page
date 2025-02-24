@@ -34,16 +34,16 @@ export default function AboutSection() {
       <div id="about" className="about-section">
         <div className="about-content">
           <img src={HeaderLogo} alt="SHIPMNTS" />
-          <p className="body-text">
+          <p className="body-text-2">
             We are a tech platform for Freight Forwarders, CHAs,Transporters, 4PLs, Importers and
             Exporters. Shipmnts streamlines Sales, Pricing, Documentation, Cargo Operations,
             Billing, and Compliance - all in one place.
           </p>
-          <p className="body-text">
+          <p className="body-text-2">
             Each tool is powerful alone, but together, they transform how logistics businesses
             operate.
           </p>
-          <p className="orange-text body-text">
+          <p className="orange-text body-text-2">
             The only app you'll ever need to run your business.
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function AboutSection() {
             <h3 className="about-heading">Contact us</h3>
             <a
               href="mailto:sales@shipmnts.com"
-              className="body-text"
+              className="body-text-2"
               style={{
                 textDecoration: 'underline',
               }}
@@ -70,12 +70,12 @@ export default function AboutSection() {
                     href={link.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="body-text"
+                    className="body-text-2"
                   >
                     {link.label}
                   </a>
                 ) : (
-                  <Link to={link.link} className="body-text">
+                  <Link to={link.link} className="body-text-2">
                     {link.label}
                   </Link>
                 )}
@@ -104,8 +104,8 @@ export default function AboutSection() {
       </div>
       <Divider className="about-divider" />
       <div className="footer-text-container">
-        <span className="crafted-text body-text">Crafted with 💜 in India</span>
-        <span className="copyright-text body-text">
+        <span className="crafted-text body-text-2">Crafted with 💜 in India</span>
+        <span className="copyright-text body-text-2">
           © 2025 Logistixian Technologies Private Limited.
         </span>
       </div>

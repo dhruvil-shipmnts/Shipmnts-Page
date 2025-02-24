@@ -37,7 +37,7 @@ const LearnAndGrowSection = () => {
               >
                 <img src={card.icon} alt={card.text} />
               </div>
-              <p className="body-text">{card.text}</p>
+              <p className="body-text-1">{card.text}</p>
             </div>
           ))}
         </div>

@@ -15,7 +15,7 @@ export default function TabScreen() {
     >
       <div className="title-container-screenshot">
         {<img className="title-image" src={Teams} alt="Upper"></img>}
-        <h6 className="screenshot-screen-title section-title" style={{ color: '#000000' }}>
+        <h6 className="screenshot-screen-title section-title header-2" style={{ color: '#000000' }}>
           {'AI-Driven Apps for More Efficient Teams'}
         </h6>
         {<img className="title-image" src={WhiteCircles} alt="Lower"></img>}
@@ -25,7 +25,7 @@ export default function TabScreen() {
           {SegmentLabels.map((label) => {
             return (
               <button
-                className="segment-button"
+                className="segment-button button-small"
                 onClick={() => {
                   setActiveTab(label);
                 }}

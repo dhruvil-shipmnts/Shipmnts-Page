@@ -13,7 +13,7 @@ const SecuritySection = () => {
   return (
     <div id={'security'}>
       <ColorScreens {...content}>
-        <p className="security-text body-text">
+        <p className="security-text body-text-1">
           A highly compatible system with <strong>24/7 availability</strong>, global disaster
           recovery, <strong>automated hourly backups</strong>, data maintenance, MFA, and 256-bit
           encryption for both transit and <strong>storage</strong>, ensuring seamless business

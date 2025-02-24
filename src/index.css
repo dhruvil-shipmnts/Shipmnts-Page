@@ -21,6 +21,9 @@ a {
   --brand-orange-1: #fe6533;
   --brown: #3a2b2b;
   --primary-bg-color: #f8f7f2;
+  --oval-button-radius: 28px;
+  --large-button-height: 40px;
+  --default-button-border-radius: 4rem;
 }
 
 h1,
@@ -36,7 +39,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
   html {
     font-size: 50%;
   }
@@ -45,7 +48,7 @@ code {
   html {
     font-size: 70%;
   }
-}
+} */
 
 .slider-item-container {
   display: flex;
@@ -59,20 +62,22 @@ code {
 }
 
 .section-title {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   font-weight: 400;
   text-align: center;
 }
 
 .btn {
-  border-radius: 4rem;
   border: none;
   padding: 10px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  height: 40px;
+}
+
+.btn-rounded {
+  border-radius: var(--default-button-border-radius);
 }
 
 .btn-large {
@@ -80,8 +85,8 @@ code {
 }
 
 .btn-round {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: var(--large-button-height);
+  width: var(--large-button-height);
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -90,19 +95,7 @@ code {
   align-items: center;
 }
 
-.text-level-1 {
-  font-size: 4rem;
-}
-
-.text-level-2 {
-  font-size: 3rem;
-}
-
-.text-level-3 {
-  font-size: 1.75rem;
-}
-
-button:hover {
+.btn:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -111,7 +104,7 @@ button:hover {
 }
 
 .body-text {
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 .underlined {
@@ -145,5 +138,92 @@ section {
 
   .img-border {
     border-radius: 8px;
+  }
+}
+
+/* Typography Styles */
+
+.header-1 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.header-2 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.header-3 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.header-4 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.button-large {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.button-small {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.button-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.body-text-1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.body-text-2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header-1 {
+    font-size: 64px;
+  }
+  .header-2 {
+    font-size: 56px;
+  }
+  .header-3 {
+    font-size: 42px;
+  }
+  .header-4 {
+    font-size: 28px;
+  }
+  .button-large {
+    font-size: 24px;
+  }
+  .button-small {
+    font-size: 20px;
+  }
+  .button-text {
+    font-size: 14px;
+  }
+  .body-text-1 {
+    font-size: 24px;
+  }
+  .body-text-2 {
+    font-size: 20px;
   }
 }

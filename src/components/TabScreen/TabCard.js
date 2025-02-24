@@ -26,7 +26,7 @@ export default function TabCard({ activeItem, style, items, index }) {
         <ModalContent onClose={handleCloseModal} items={items} index={index} />
       </Modal>
       <div className="tab-card" style={style}>
-        <h2>{activeItem.title}</h2>
+        <h2 className="header-3">{activeItem.title}</h2>
         <Flex justify="end" className="tab-button-div">
           <div className="tab-add-button btn-round" onClick={handleModalOpen}>
             <img className="tab-add-icon " src={Plus} alt="Plus" />

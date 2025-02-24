@@ -21,7 +21,7 @@
   border-radius: 10px;
   cursor: pointer;
   height: 54px;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .tab-content-container {
@@ -41,7 +41,7 @@
   }
 
   .segment-container .segment-button {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
   .tab-content-container {
