@@ -4,7 +4,7 @@ import { PricingAdBg } from '../../assets/index';
 
 const PricingModelAd = () => {
   const content = {
-    title: 'Cutting-edge software at Forwarder Friendly Prices',
+    title: 'Cutting-Edge Software at Forwarder-Friendly Prices',
     imageSrc: PricingAdBg,
     backgroundColor: '#FFF2E2',
     titleColor: '#7A1600',

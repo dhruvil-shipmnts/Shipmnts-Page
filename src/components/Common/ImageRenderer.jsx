@@ -8,7 +8,7 @@ const ImageRenderer = ({ src, alt, className, ...rest }) => {
       <img
         src={src}
         alt={alt}
-        className={className}
+        className={`${className} img-border`}
         {...rest}
         onClick={() => {
           openImageViewer(src);

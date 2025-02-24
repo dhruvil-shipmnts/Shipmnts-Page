@@ -40,42 +40,42 @@ import TabContainer from './TabContainer';
 export const SALES_AND_PRICING = [
   {
     key: 'lead_activity_management',
-    title: 'Lead & Activity management',
+    title: 'Lead and Activity Management',
     paragraph:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
     image: SalesAndPricing1,
   },
   {
     key: 'configurable_pipelines',
-    title: 'Configurable Pipelines',
+    title: 'Customizable Sales Pipelines',
     paragraph:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
     image: SalesAndPricing2,
   },
   {
     key: 'inquiry_quotations',
-    title: 'Inquiry & Quotations',
+    title: 'Inquiry and Quotation Management',
     paragraph:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
     image: SalesAndPricing3,
   },
   {
     key: 'task_management',
-    title: 'Task Management',
+    title: 'Task Tracking and Collaboration',
     paragraph:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
     image: SalesAndPricing4,
   },
   {
     key: 'rate_explorer',
-    title: 'Rate Explorer',
+    title: 'Rate Explorer and Comparison',
     paragraph:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
     image: SalesAndPricing5,
   },
   {
     key: 'lead_analytics_more',
-    title: 'Lead Analytics & more',
+    title: 'Lead Analytics and Insights',
     paragraph:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
     image: SalesAndPricing6,
@@ -85,83 +85,61 @@ export const SALES_AND_PRICING = [
 export const TAXATION_CONTROL = [
   {
     key: 'taxation_control_1',
-    title: 'Tax Automations',
+    title: 'Tax Automation Tools',
     image: TaxationControls1,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
   {
     key: 'taxation_control_2',
-    title: 'Profict and Loss with EBIDTA Metrics',
+    title: 'Profit and Loss with EBITDA Metrics',
     image: TaxationControls2,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
   {
     key: 'taxation_control_3',
     title: 'Robust Audit Trails',
     image: TaxationControls3,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
   {
     key: 'taxation_control_4',
-    title: 'TDS Tracking',
+    title: 'TDS Tracking & Compliance',
     image: TaxationControls4,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
   {
     key: 'taxation_control_5',
-    title: 'Credit Control rules to reduce bad credit',
+    title: 'Credit Control Rules to Reduce Bad Debt',
     image: TaxationControls5,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
   {
     key: 'taxation_control_6',
-    title: 'Bank reconciliaition suite',
+    title: 'Bank Reconciliation Suite',
     image: TaxationControls6,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
 ];
 
 export const ACCOUNT_RECEIVABLE = [
   {
     key: 'account_receivable_1',
-    title: 'Integrated Invoicing from a Shipment',
+    title: 'Integrated Invoicing from Shipments',
     image: AccountsReceivable1,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
   {
     key: 'account_receivable_2',
     title: 'Automated Collection Reminders',
     image: AccountsReceivable2,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
   {
     key: 'account_receivable_3',
     title: 'AR with Profitability Insights',
     image: AccountsReceivable3,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
   {
     key: 'account_receivable_4',
-    title: 'Collections Tracking',
+    title: 'Collections Tracking & Management',
     image: AccountsReceivable4,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
   {
     key: 'account_receivable_5',
-    title: 'Intelligence and Analytics',
+    title: 'Business Intelligence & Analytics',
     image: AccountsReceivable5,
-    paragraph:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eum nesciunt odio, numquam sunt minus accusamus, reiciendis consequatur vel maxime doloremque mollitia delectus itaque nam asperiores. Cum harum tenetur officia.',
   },
 ];
 
@@ -174,17 +152,17 @@ export const ACCOUNT_PAYABLE = [
   {
     key: 'account_payable_2',
     image: AccountsPayable2,
-    title: 'Bulk Purchase Booking',
+    title: 'Bulk Purchase Booking System',
   },
   {
     key: 'account_payable_3',
     image: AccountsPayable3,
-    title: 'AP Tracking',
+    title: 'AP Tracking & Monitoring',
   },
   {
     key: 'account_payable_4',
     image: AccountsPayable4,
-    title: 'Identify RIsky Suppliers',
+    title: 'Identify Risky Suppliers',
   },
   {
     key: 'account_payable_5',
@@ -194,39 +172,39 @@ export const ACCOUNT_PAYABLE = [
   {
     key: 'account_payable_6',
     image: AccountsPayable6,
-    title: 'Tax Reconciliaition Suite',
+    title: 'Tax Reconciliation Suite',
   },
 ];
 
 export const DOCUMENTATION = [
   {
     key: 'documentation_1',
-    title: 'Manage document level workflow for both forwarding & NVO',
+    title: 'Manage Document-Level Workflow for Forwarding & NVO',
     image: DocWorkflow,
   },
   {
     key: 'documentation_2',
-    title: 'Single Click Multimodal Document Generation ',
+    title: 'Single-Click Multimodal Document Generation',
     image: Generation,
   },
   {
     key: 'documentation_3',
-    title: 'Real Time document editor with credit control',
+    title: 'Real-Time Document Editor with Credit Control',
     image: Editor,
   },
   {
     key: 'documentation_4',
-    title: 'Easy in-app collaboration for internal teams & cx',
+    title: 'Easy In-App Collaboration for Internal Teams & CX',
     image: Collaboration,
   },
   {
     key: 'documentation_5',
-    title: 'Go Paperless with organized digital storage ',
+    title: 'Go Paperless with Organized Digital Storage',
     image: Paperless,
   },
   {
     key: 'documentation_6',
-    title: 'In App E-AWB Transmission ',
+    title: 'In-App E-AWB Transmission',
     image: Transmission,
   },
 ];
@@ -234,7 +212,7 @@ export const DOCUMENTATION = [
 export const CS_OPERATIONS = [
   {
     key: 'cs_operations_1',
-    title: 'Multimodal Tracking Automation ',
+    title: 'Multimodal Tracking Automation',
     image: Tracking,
   },
   {
@@ -244,22 +222,22 @@ export const CS_OPERATIONS = [
   },
   {
     key: 'cs_operations_3',
-    title: 'Click Multichannel Notifications',
+    title: 'Single-Click Multichannel Notifications',
     image: Notifications,
   },
   {
     key: 'cs_operations_4',
-    title: 'Operational Level Credit Controls',
+    title: 'Operational-Level Credit Controls',
     image: CreditControls,
   },
   {
     key: 'cs_operations_5',
-    title: 'DSR / Exception Automation Monitoring & Alerts',
+    title: 'DSR/Exception Monitoring & Alerts',
     image: Alerts,
   },
   {
     key: 'cs_operations_6',
-    title: 'AI powered Auto record Creation with Booking copy/ MBL/ HBL',
+    title: 'AI-Powered Auto Record Creation with Booking Copy/MBL/HBL',
     image: HBL,
   },
 ];

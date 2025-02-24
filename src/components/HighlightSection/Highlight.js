@@ -6,7 +6,6 @@ import {
   Actionable_Mobile,
   AI_Desktop,
   AI_Mobile,
-  ArrowForward,
   Cutting_Desktop,
   Cutting_Mobile,
   Digital_Desktop,
@@ -49,11 +48,9 @@ const CarouselScreenWrapper = ({
         <h6 className="page-title" style={{ color: titleColor || '#000000' }}>
           {title}
         </h6>
-        <div className="section-navigate-icon btn-round">
-          <a href={`#${sectionHyperLink}`}>
-            <img src={ArrowForward} alt="->" />
-          </a>
-        </div>
+      </div>
+      <div className="section-navigate-button">
+        <a href={`#${sectionHyperLink}`}>Learn more</a>
       </div>
     </div>
   );
@@ -102,7 +99,7 @@ const Highlight = () => {
       mobileImageSrc: Personalised_Mobile,
     },
     {
-      title: 'With Great Power comes Great Security',
+      title: 'With Great Power Comes Great Security',
       imageSrc: With_Desktop,
       backgroundColor: '#FAE8FF',
       titleColor: '#60007B',
@@ -110,7 +107,7 @@ const Highlight = () => {
       mobileImageSrc: With_Mobile,
     },
     {
-      title: 'Cutting-edge software at Forwarder Friendly Prices',
+      title: 'Cutting-Edge Software at Forwarder-Friendly Prices',
       imageSrc: Cutting_Desktop,
       backgroundColor: '#FFF2E2',
       titleColor: '#7A1600',

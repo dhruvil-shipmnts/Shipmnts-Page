@@ -36,7 +36,7 @@ export const PricingComponent = () => {
   return (
     <div id="pricing" className="pricing-page">
       <section className="pricing-page-demo">
-        <h2 className="pricing-title ">Your front and back offices in one logistics software.</h2>
+        <h2 className="pricing-title ">Your Front and Back Offices in One Logistics Software.</h2>
 
         <DemoButton
           size="large"

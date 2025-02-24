@@ -87,6 +87,9 @@
 
 /* mobile */
 @media (max-width: 800px) {
+  .services-section {
+    padding: 5rem 0;
+  }
   .services-section-title {
     width: 90%;
   }

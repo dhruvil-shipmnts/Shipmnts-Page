@@ -34,7 +34,6 @@ export default function CarouselWrapper({
       <Swiper
         ref={swiperRef}
         spaceBetween={20}
-        grabCursor={true}
         modules={[Navigation]}
         initialSlide={initialSlide ?? 0}
         breakpoints={{

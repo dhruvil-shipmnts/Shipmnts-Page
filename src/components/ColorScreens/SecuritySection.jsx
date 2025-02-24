@@ -4,17 +4,11 @@ import { SecuritySectionBg } from '../../assets/index';
 
 const SecuritySection = () => {
   const content = {
-    title: 'With Great Power comes Great Security',
+    title: 'With Great Power Comes Great Security',
     imageSrc: SecuritySectionBg,
     backgroundColor: '#FAE8FF',
     titleColor: '#60007B',
   };
-  // {
-  //   title: 'Cutting-edge software at Forwarder Friendly Prices',
-  //   imageSrc: Balance,
-  //   backgroundColor: '#FFF2E2',
-  //   titleColor: '#7A1600',
-  // },
 
   return (
     <div id={'security'}>

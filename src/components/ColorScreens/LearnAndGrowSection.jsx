@@ -9,7 +9,7 @@ import {
 
 const LearnAndGrowSection = () => {
   const content = {
-    title: 'Learn and grow better with excellent support and resources',
+    title: 'Learn and Grow Better with Excellent Support and Resources',
     imageSrc: LearnAndGrowBg,
     backgroundColor: '#FEFFC7',
     titleColor: '#7A1600',

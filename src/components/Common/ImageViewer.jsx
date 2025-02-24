@@ -20,7 +20,7 @@ const ImageViewerModal = () => {
         &times;
       </button>
       <div className="image-viewer-modal" onClick={(e) => e.stopPropagation()}>
-        <img className="modal-image" src={imageSrc} alt="Preview" />
+        <img className="modal-image img-border" src={imageSrc} alt="Preview" />
       </div>
     </div>
   );

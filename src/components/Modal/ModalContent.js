@@ -13,7 +13,7 @@ export default function ModalContent({ items, onClose, index }) {
                 <h2 className="screen-shot-title">{item.title}</h2>
               </div>
               <div>
-                <img className="model-content-image" src={item.image} alt="Product" />
+                <img className="model-content-image  img-border" src={item.image} alt="Product" />
               </div>
             </div>
           );
